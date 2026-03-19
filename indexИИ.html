@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Аренда 1С в облаке | Безопасно и выгодно</title>
+    <!-- Подключение шрифтов Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+    <!-- Font Awesome для иконок (бесплатно) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f9fafc;
+            color: #1e293b;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Навигация */
+        .navbar {
+            background-color: #ffffff;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            padding: 16px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .navbar .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: 700;
+            color: #2563eb;
+        }
+        .logo span {
+            color: #1e293b;
+            font-weight: 400;
+        }
+        .nav-contacts {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+        .nav-contacts a {
+            text-decoration: none;
+            color: #1e293b;
+            font-weight: 500;
+        }
+        .nav-contacts .phone {
+            background: #f1f5f9;
+            padding: 8px 16px;
+            border-radius: 30px;
+            font-weight: 600;
+        }
+        .btn {
+            display: inline-block;
+            background-color: #2563eb;
+            color: white;
+            padding: 12px 28px;
+            border-radius: 40px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background-color 0.3s, transform 0.2s;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .btn:hover {
+            background-color: #1d4ed8;
+            transform: scale(1.02);
+        }
+        .btn-outline {
+            background: transparent;
+            color: #2563eb;
+            border: 2px solid #2563eb;
+        }
+        .btn-outline:hover {
+            background: #2563eb;
+            color: white;
+        }
+
+        /* Hero секция */
+        .hero {
+            padding: 60px 0 40px;
+            background: linear-gradient(135deg, #f0f9ff 0%, #ffffff 100%);
+        }
+        .hero .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+        }
+        .hero h1 {
+            font-size: 48px;
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 20px;
+            color: #0f172a;
+        }
+        .hero h1 span {
+            color: #2563eb;
+        }
+        .hero p {
+            font-size: 18px;
+            color: #334155;
+            margin-bottom: 30px;
+        }
+        .hero-buttons {
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+        .hero-image {
+            text-align: center;
+        }
+        .hero-image img {
+            max-width: 100%;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+
+        /* Проблемы/Решения (возражения) */
+        .problems {
+            padding: 70px 0;
+            background: white;
+        }
+        .section-title {
+            text-align: center;
+            font-size: 36px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: #0f172a;
+        }
+        .section-subtitle {
+            text-align: center;
+            font-size: 18px;
+            color: #475569;
+            max-width: 700px;
+            margin: 0 auto 50px;
+        }
+        .problems-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+        }
+        .problem-card {
+            background: #f8fafc;
+            border-radius: 20px;
+            padding: 30px;
+            transition: 0.3s;
+            border: 1px solid #e2e8f0;
+        }
+        .problem-card:hover {
+            box-shadow: 0 15px 30px rgba(0,0,0,0.05);
+            border-color: #2563eb;
+        }
+        .problem-icon {
+            font-size: 32px;
+            color: #2563eb;
+            margin-bottom: 15px;
+        }
+        .problem-question {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 15px;
+            color: #0f172a;
+        }
+        .problem-answer {
+            color: #334155;
+        }
+        .problem-answer i {
+            color: #16a34a;
+            margin-right: 5px;
+        }
+
+        /* Преимущества */
+        .benefits {
+            padding: 70px 0;
+            background: #f1f5f9;
+        }
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        .benefit-item {
+            background: white;
+            padding: 30px 20px;
+            border-radius: 16px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.02);
+        }
+        .benefit-item i {
+            font-size: 40px;
+            color: #2563eb;
+            margin-bottom: 20px;
+        }
+        .benefit-item h3 {
+            font-size: 20px;
+            margin-bottom: 12px;
+        }
+        .benefit-item p {
+            color: #475569;
+        }
+
+        /* Как мы снимаем возражения (блок с ответами) */
+        .faq-objections {
+            padding: 70px 0;
+            background: white;
+        }
+        .faq-grid {
+            max-width: 900px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .faq-item {
+            background: #f8fafc;
+            border-radius: 16px;
+            padding: 25px 30px;
+            border-left: 6px solid #2563eb;
+        }
+        .faq-question {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: #0f172a;
+        }
+        .faq-question i {
+            color: #2563eb;
+            margin-right: 8px;
+        }
+        .faq-answer {
+            color: #334155;
+            padding-left: 32px;
+        }
+
+        /* CTA */
+        .cta {
+            background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+        .cta h2 {
+            font-size: 40px;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+        .cta p {
+            font-size: 18px;
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+        .cta .btn {
+            background: white;
+            color: #1e3a8a;
+            font-size: 18px;
+            padding: 16px 40px;
+        }
+        .cta .btn:hover {
+            background: #f1f5f9;
+        }
+
+        /* Футер */
+        .footer {
+            background: #0f172a;
+            color: #cbd5e1;
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        /* Адаптация */
+        @media (max-width: 768px) {
+            .hero .container {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+            .hero h1 {
+                font-size: 36px;
+            }
+            .hero-buttons {
+                justify-content: center;
+            }
+            .navbar .container {
+                flex-direction: column;
+                gap: 15px;
+            }
+            .problems-grid {
+                grid-template-columns: 1fr;
+            }
+            .section-title {
+                font-size: 30px;
+            }
+        }
+        /* Иконка для демо */
+        .demo-icon {
+            background: #e6f7e6;
+            color: #16a34a;
+            padding: 4px 12px;
+            border-radius: 40px;
+            font-weight: 500;
+            font-size: 14px;
+            display: inline-block;
+            margin-top: 15px;
+        }
+        .trust-badge {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            margin: 30px 0;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">1С-Арена <span>• облачные решения</span></div>
+            <div class="nav-contacts">
+                <a href="#problems">Почему мы</a>
+                <a href="#faq">Вопросы</a>
+                <a href="#" class="phone"><i class="fas fa-phone-alt"></i> +7 (495) 123-45-67</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="container">
+            <div>
+                <h1>1С в аренду: <span>забудьте о серверах и обновлениях</span></h1>
+                <p>Работайте в 1С из любой точки мира. Безопасно, с ежедневным бэкапом и круглосуточной поддержкой. Первый месяц бесплатно.</p>
+                <div class="hero-buttons">
+                    <a href="#cta" class="btn">Попробовать бесплатно 14 дней</a>
+                    <a href="#faq" class="btn btn-outline">Ответы на возражения</a>
+                </div>
+                <div class="trust-badge">
+                    <span><i class="fas fa-shield-alt"></i> 99,9% аптайм</span>
+                    <span><i class="fas fa-lock"></i> Шифрование данных</span>
+                    <span><i class="fas fa-database"></i> Резервное копирование</span>
+                </div>
+            </div>
+            <div class="hero-image">
+                <!-- Заглушка изображения (можно заменить на реальное) -->
+                <img src="https://placehold.co/600x400/2563eb/white?text=1S+Cloud+Work" alt="1С в облаке">
+            </div>
+        </div>
+    </section>
+
+    <section class="problems" id="problems">
+        <div class="container">
+            <h2 class="section-title">Мы слышим ваши сомнения</h2>
+            <p class="section-subtitle">Вот самые частые возражения и почему с нами они теряют смысл</p>
+            <div class="problems-grid">
+                <div class="problem-card">
+                    <div class="problem-icon"><i class="fas fa-coins"></i></div>
+                    <div class="problem-question">«Дорого, лучше купить коробку»</div>
+                    <div class="problem-answer"><i class="fas fa-check-circle"></i> Посчитайте стоимость владения: сервер, сисадмин, обновления, лицензии на каждого сотрудника. В аренде вы платите только за то, чем пользуетесь, и списываете расходы ежемесячно.</div>
+                </div>
+                <div class="problem-card">
+                    <div class="problem-icon"><i class="fas fa-shield-virus"></i></div>
+                    <div class="problem-question">«Данные украдут / пропадут»</div>
+                    <div class="problem-answer"><i class="fas fa-check-circle"></i> Наоборот: у нас данные защищены лучше, чем на вашем офисном ПК. Регулярные бэкапы, шифрованные каналы, защита от вирусов-шифровальщиков.</div>
+                </div>
+                <div class="problem-card">
+                    <div class="problem-icon"><i class="fas fa-wifi"></i></div>
+                    <div class="problem-question">«А если интернет пропадет?»</div>
+                    <div class="problem-answer"><i class="fas fa-check-circle"></i> Работаем даже при низкой скорости. На случай аварии — подстрахуйтесь модемом, это дешевле содержания сервера.</div>
+                </div>
+                <div class="problem-card">
+                    <div class="problem-icon"><i class="fas fa-handshake"></i></div>
+                    <div class="problem-question">«Зависеть от вас — страшно»</div>
+                    <div class="problem-answer"><i class="fas fa-check-circle"></i> Мы заключаем договор, данные — ваши. В любой момент выгрузим базу в стандартном формате, уходите когда захотите.</div>
+                </div>
+                <div class="problem-card">
+                    <div class="problem-icon"><i class="fas fa-tachometer-alt"></i></div>
+                    <div class="problem-question">«У нас медленный интернет»</div>
+                    <div class="problem-answer"><i class="fas fa-check-circle"></i> Проверьте сами! Дадим тестовый доступ на 2 недели. Обычно 1С летает быстрее, чем на старом офисном сервере.</div>
+                </div>
+                <div class="problem-card">
+                    <div class="problem-icon"><i class="fas fa-cogs"></i></div>
+                    <div class="problem-question">«У нас нетиповая 1С / доработки»</div>
+                    <div class="problem-answer"><i class="fas fa-check-circle"></i> Перенесем вашу конфигурацию в облако. Работайте как обычно, но со всеми плюсами удаленного доступа.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="benefits">
+        <div class="container">
+            <h2 class="section-title">Почему выбирают аренду 1С</h2>
+            <div class="benefits-grid">
+                <div class="benefit-item">
+                    <i class="fas fa-rocket"></i>
+                    <h3>Доступ 24/7</h3>
+                    <p>Из дома, офиса, командировки — с любого устройства</p>
+                </div>
+                <div class="benefit-item">
+                    <i class="fas fa-sync-alt"></i>
+                    <h3>Автообновления</h3>
+                    <p>Отчетность всегда актуальна, формы ФНС обновляются сами</p>
+                </div>
+                <div class="benefit-item">
+                    <i class="fas fa-headset"></i>
+                    <h3>Поддержка</h3>
+                    <p>Решаем проблемы быстрее, чем ваш штатный сисадмин</p>
+                </div>
+                <div class="benefit-item">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Масштабирование</h3>
+                    <p>Добавили сотрудника — включили в тариф за 5 минут</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq-objections" id="faq">
+        <div class="container">
+            <h2 class="section-title">Развернутые ответы на возражения</h2>
+            <p class="section-subtitle">То, что говорят клиенты, и как мы предлагаем на это смотреть</p>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <div class="faq-question"><i class="fas fa-comment-dots"></i> «Купить дешевле, чем платить каждый месяц»</div>
+                    <div class="faq-answer">Сравните не цену коробки, а стоимость владения за 3 года. Коробка + сервер + лицензии + сисадмин + ИТС для обновлений. Аренда часто выходит дешевле, плюс нет капекса.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question"><i class="fas fa-comment-dots"></i> «А если вы закроетесь или поднимете цены?»</div>
+                    <div class="faq-answer">Мы работаем официально и дорожим репутацией. В договоре прописаны условия. В любой момент вы можете скачать полную копию базы и уйти к другому провайдеру или к себе. Мы не держим данные в заложниках.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question"><i class="fas fa-comment-dots"></i> «У нас уже своя 1С и все работает»</div>
+                    <div class="faq-answer">Это отлично! Но представьте: не думать о бэкапах, не обновлять вручную отчетность, иметь доступ к базе из дома. Мы предлагаем не замену, а новый уровень комфорта. Попробуйте и почувствуйте разницу.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question"><i class="fas fa-comment-dots"></i> «Надо согласовать с директором»</div>
+                    <div class="faq-answer">Конечно. Передайте директору три факта: 1) не нужно покупать сервер (экономия бюджета); 2) все расходы списываются ежемесячно; 3) сотрудники работают удаленно без потери производительности. Мы подготовим КП для убедительности.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question"><i class="fas fa-comment-dots"></i> «Нам нужно работать с кассами и банком»</div>
+                    <div class="faq-answer">Поддерживаем. Настроим обмен с банком и подключение торгового оборудования через облачные сервисы или драйверы. Работаем так же, как в локальной сети.</div>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 40px;">
+                <span class="demo-icon"><i class="fas fa-calendar-alt"></i> Даем тестовый доступ на 14 дней. Убедитесь лично!</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta" id="cta">
+        <div class="container">
+            <h2>Перестаньте думать о серверах</h2>
+            <p>Начните работать в 1С спокойно и безопасно уже сегодня.<br> Первые 14 дней — бесплатно, без ограничений.</p>
+            <a href="#" class="btn">Получить бесплатный доступ</a>
+            <p style="margin-top: 20px; font-size: 14px; opacity: 0.7;"><i class="fas fa-phone-alt"></i> Или позвоните: +7 (495) 123-45-67</p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>© 2025 1С-Арена. Аренда 1С в облаке для вашего бизнеса.</p>
+            <p style="margin-top: 10px; font-size: 14px;">Все права защищены. Политика конфиденциальности</p>
+        </div>
+    </footer>
+</body>
+</html>
