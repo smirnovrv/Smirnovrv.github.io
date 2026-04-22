@@ -10,287 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
     <!-- Font Awesome 6 (бесплатные иконки) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: #ffffff;
-            color: #1e293b;
-            line-height: 1.5;
-        }
-
-        .container {
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 0 24px;
-        }
-
-        /* Хедер (легкий, ненавязчивый) */
-        .header {
-            padding: 24px 0;
-            border-bottom: 1px solid #eef2f6;
-            background: white;
-            position: sticky;
-            top: 0;
-            z-index: 10;
-            backdrop-filter: blur(10px);
-            background-color: rgba(255,255,255,0.9);
-        }
-        .header .container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .logo {
-            font-weight: 700;
-            font-size: 22px;
-            color: #0f172a;
-        }
-        .logo i {
-            color: #2563eb;
-            margin-right: 6px;
-        }
-        .header-phone {
-            background: #f1f4f9;
-            padding: 8px 18px;
-            border-radius: 40px;
-            font-weight: 600;
-            color: #1e293b;
-            text-decoration: none;
-            font-size: 16px;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        .header-phone i {
-            color: #2563eb;
-        }
-
-        /* Герой (максимально простой) */
-        .hero-simple {
-            padding: 60px 0 20px;
-            text-align: center;
-            background: #ffffff;
-        }
-        .hero-simple h1 {
-            font-size: 44px;
-            font-weight: 700;
-            letter-spacing: -0.02em;
-            margin-bottom: 16px;
-            color: #0f172a;
-        }
-        .hero-simple h1 span {
-            color: #2563eb;
-            background: #e6f0ff;
-            padding: 0 8px;
-            border-radius: 16px;
-        }
-        .hero-simple p {
-            font-size: 18px;
-            color: #475569;
-            max-width: 700px;
-            margin: 0 auto;
-        }
-        .hero-simple .badge {
-            display: inline-block;
-            background: #dcfce7;
-            color: #166534;
-            padding: 8px 20px;
-            border-radius: 40px;
-            font-weight: 600;
-            margin-top: 24px;
-            font-size: 16px;
-        }
-
-        /* Визуальный разделитель */
-        .divider {
-            text-align: center;
-            margin: 40px 0 20px;
-        }
-        .divider span {
-            background: #f1f4f9;
-            padding: 8px 24px;
-            border-radius: 40px;
-            font-weight: 600;
-            color: #334155;
-            font-size: 14px;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-        }
-
-        /* Стили для блока вопрос-ответ (диалог) */
-        .dialogue {
-            margin: 40px 0;
-        }
-        .dialogue-item {
-            margin-bottom: 40px;
-            border-bottom: 1px dashed #e2e8f0;
-            padding-bottom: 40px;
-        }
-        .dialogue-item:last-child {
-            border-bottom: none;
-        }
-
-        /* Вопрос (как от клиента) */
-        .question {
-            display: flex;
-            gap: 16px;
-            margin-bottom: 20px;
-            align-items: flex-start;
-        }
-        .question-avatar {
-            background: #f1f4f9;
-            width: 48px;
-            height: 48px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 20px;
-            color: #475569;
-            flex-shrink: 0;
-        }
-        .question-bubble {
-            background: #f1f4f9;
-            padding: 18px 24px;
-            border-radius: 24px 24px 24px 4px;
-            max-width: 80%;
-        }
-        .question-bubble p {
-            font-size: 18px;
-            font-weight: 500;
-            color: #0f172a;
-        }
-        .question-bubble .company {
-            font-size: 14px;
-            color: #64748b;
-            margin-top: 6px;
-        }
-
-        /* Ответ (от эксперта) */
-        .answer {
-            display: flex;
-            gap: 16px;
-            justify-content: flex-end;
-            align-items: flex-start;
-        }
-        .answer-bubble {
-            background: #eef2ff;
-            padding: 18px 24px;
-            border-radius: 24px 24px 4px 24px;
-            max-width: 80%;
-        }
-        .answer-bubble p {
-            font-size: 17px;
-            color: #1e293b;
-        }
-        .answer-bubble i {
-            color: #2563eb;
-            margin-right: 6px;
-        }
-        .answer-avatar {
-            background: #2563eb;
-            width: 48px;
-            height: 48px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 20px;
-            color: white;
-            flex-shrink: 0;
-        }
-
-        /* Дополнительные акценты (чек-лист) */
-        .check-list {
-            list-style: none;
-            margin-top: 12px;
-        }
-        .check-list li {
-            margin-bottom: 8px;
-            display: flex;
-            gap: 8px;
-            align-items: flex-start;
-        }
-        .check-list i {
-            color: #16a34a;
-            margin-top: 3px;
-        }
-
-        /* Блок с тест-драйвом */
-        .test-drive {
-            background: #f8fafc;
-            border-radius: 32px;
-            padding: 48px 32px;
-            text-align: center;
-            margin: 60px 0;
-            border: 1px solid #e2e8f0;
-        }
-        .test-drive h3 {
-            font-size: 32px;
-            font-weight: 700;
-            margin-bottom: 16px;
-        }
-        .test-drive p {
-            font-size: 18px;
-            color: #334155;
-            max-width: 600px;
-            margin: 0 auto 32px;
-        }
-        .btn-big {
-            background: #2563eb;
-            color: white;
-            border: none;
-            padding: 16px 42px;
-            border-radius: 60px;
-            font-weight: 700;
-            font-size: 18px;
-            cursor: pointer;
-            transition: background 0.2s, transform 0.2s;
-            box-shadow: 0 10px 20px rgba(37,99,235,0.2);
-            text-decoration: none;
-            display: inline-block;
-        }
-        .btn-big:hover {
-            background: #1d4ed8;
-            transform: scale(1.02);
-        }
-
-        /* Футер */
-        .footer-mini {
-            padding: 40px 0;
-            text-align: center;
-            color: #64748b;
-            font-size: 14px;
-            border-top: 1px solid #e2e8f0;
-        }
-
-        /* Адаптация */
-        @media (max-width: 700px) {
-            .hero-simple h1 {
-                font-size: 32px;
-            }
-            .question-bubble, .answer-bubble {
-                max-width: 100%;
-            }
-            .question, .answer {
-                flex-wrap: wrap;
-            }
-            .answer {
-                flex-direction: row-reverse;
-            }
-            .question-avatar, .answer-avatar {
-                width: 40px;
-                height: 40px;
-                font-size: 16px;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -303,7 +23,7 @@
 
 <section class="hero-simple">
     <div class="container">
-        <h1>1С в аренду: <span>Используйте 1с по максимуму</span></h1>
+        <h1>1С в аренду: <span>Используйте 1С по максимуму</span></h1>
         <p>Мы не используем шаблонные фразы. Здесь реальные диалоги с клиентами. Читайте и убеждайтесь.</p>
         <div class="badge"><i class="fas fa-check-circle"></i> Первым 100 клиентам специальная цена 1000 рублей</div>
     </div>
@@ -315,124 +35,11 @@
     </div>
 </div>
 
-<section class="dialogue container">
-
-    <!-- ВОПРОС 1 -->
-    <div class="dialogue-item">
-        <div class="question">
-            <div class="question-avatar"><i class="fas fa-user-tie"></i></div>
-            <div class="question-bubble">
-                <p>«Зачем платить каждый месяц? Купить дешевле — раз и всё.»</p>
-                <div class="company">— Иван, фин. директор</div>
-            </div>
-        </div>
-        <div class="answer">
-            <div class="answer-bubble">
-                <p><i class="fas fa-calculator"></i> <strong>Давайте посчитаем полностью:</strong> покупка коробки 1С (от 5 000 до 50 000₽), потом лицензии на каждого сотрудника (еще 10 000₽ за каждое рабочее место), сервер (от 50 000₽) или мощный ПК, зарплата сисадмина (от 15 000₽/мес) и подписка на обновления ИТС (около 30 000₽/год).</p>
-                <p>В аренде: фиксированный платеж, включены обновления, бэкапы и техподдержка. За 3 года аренда часто <strong>обходится дешевле</strong>, плюс не нужно платить сразу крупную сумму.</p>
-            </div>
-            <div class="answer-avatar"><i class="fas fa-headset"></i></div>
-        </div>
-    </div>
-
-    <!-- ВОПРОС 2 -->
-    <div class="dialogue-item">
-        <div class="question">
-            <div class="question-avatar"><i class="fas fa-user-secret"></i></div>
-            <div class="question-bubble">
-                <p>«Наши данные будут у вас. А если взломают или вы закроетесь?»</p>
-                <div class="company">— Елена, главный бухгалтер</div>
-            </div>
-        </div>
-        <div class="answer">
-            <div class="answer-bubble">
-                <p><i class="fas fa-shield-alt"></i> <strong>Безопасность — наша ответственность.</strong> Ваши данные хранятся в дата-центре с физической защитой, резервным копированием каждые 4 часа и шифрованием каналов. Вирус-шифровальщик не доберется до базы, в отличие от локального ПК.</p>
-                <p>А если мы закроемся (мы работаем 8 лет, но вдруг) — вы в любой момент скачиваете полную копию базы в формате .dt и уходите к другому провайдеру или к себе. Данные ваши, мы лишь арендодатели.</p>
-            </div>
-            <div class="answer-avatar"><i class="fas fa-headset"></i></div>
-        </div>
-    </div>
-
-    <!-- ВОПРОС 3 -->
-    <div class="dialogue-item">
-        <div class="question">
-            <div class="question-avatar"><i class="fas fa-user-md"></i></div>
-            <div class="question-bubble">
-                <p>«А если интернет пропадет? Мы же работать не сможем.»</p>
-                <div class="company">— Сергей, коммерческий директор</div>
-            </div>
-        </div>
-        <div class="answer">
-            <div class="answer-bubble">
-                <p><i class="fas fa-wifi"></i> <strong>Зависимость есть, но она не страшнее, чем у банк-клиента или email.</strong> Без интернета сегодня не работает почти никто. Для 1С достаточно 1-2 Мбит/с, можно работать даже через 4G модем.</p>
-                <p>На случай аварии рекомендуем иметь второй канал (например, USB-модем) — это копейки по сравнению с простоем бизнеса. У нас клиенты работают из кафе, поездов и дач — довольны.</p>
-                <p>+ даем тестовый доступ — проверьте сами.</p>
-            </div>
-            <div class="answer-avatar"><i class="fas fa-headset"></i></div>
-        </div>
-    </div>
-
-    <!-- ВОПРОС 4 -->
-    <div class="dialogue-item">
-        <div class="question">
-            <div class="question-avatar"><i class="fas fa-user-cog"></i></div>
-            <div class="question-bubble">
-                <p>«У нас своя доработанная 1С, не влезет в типовое облако.»</p>
-                <div class="company">— Максим, IT-специалист</div>
-            </div>
-        </div>
-        <div class="answer">
-            <div class="answer-bubble">
-                <p><i class="fas fa-code-branch"></i> <strong>Мы переносим любые конфигурации.</strong> Дайте нам свою базу — мы развернем её на сервере. Вы будете работать точно так же, как и в локальной сети, но со всеми плюсами облака: доступ отовсюду, бэкапы, надежность.</p>
-                <p>Поддерживаем внешние отчеты, печатные формы, обмен с банками и кассами. Всё настраиваем.</p>
-            </div>
-            <div class="answer-avatar"><i class="fas fa-headset"></i></div>
-        </div>
-    </div>
-
-    <!-- ВОПРОС 5 -->
-    <div class="dialogue-item">
-        <div class="question">
-            <div class="question-avatar"><i class="fas fa-user-check"></i></div>
-            <div class="question-bubble">
-                <p>«У нас уже всё есть, своя 1С работает. Зачем менять?»</p>
-                <div class="company">— Дмитрий, владелец</div>
-            </div>
-        </div>
-        <div class="answer">
-            <div class="answer-bubble">
-                <p><i class="fas fa-clock"></i> <strong>Ради вашего же времени и денег.</strong> Сейчас вы платите сисадмину за обслуживание сервера, тратите нервы на обновления отчетности, переживаете за бэкапы. В облаке всё это автоматически.</p>
-                <p>Попробуйте для эксперимента — переведите хотя бы один отдел на 14 дней. Увидите, что задачи решаются быстрее, сотрудники работают из дома, а вы спите спокойно. Не понравится — вернетесь обратно.</p>
-            </div>
-            <div class="answer-avatar"><i class="fas fa-headset"></i></div>
-        </div>
-    </div>
-
-    <!-- ВОПРОС 6 (директорский) -->
-    <div class="dialogue-item">
-        <div class="question">
-            <div class="question-avatar"><i class="fas fa-briefcase"></i></div>
-            <div class="question-bubble">
-                <p>«Надо согласовать с директором / учредителями. Что им сказать?»</p>
-                <div class="company">— Ольга, финансовый менеджер</div>
-            </div>
-        </div>
-        <div class="answer">
-            <div class="answer-bubble">
-                <p><i class="fas fa-chart-pie"></i> <strong>Три аргумента для руководителя:</strong></p>
-                <ul class="check-list">
-                    <li><i class="fas fa-check-circle"></i> Не нужно покупать сервер и платить за него сразу — деньги остаются в обороте.</li>
-                    <li><i class="fas fa-check-circle"></i> Все расходы списываются ежемесячно (уменьшается налог на прибыль).</li>
-                    <li><i class="fas fa-check-circle"></i> Бухгалтер и кладовщик работают удаленно, не выпадают из процессов в форс-мажорах.</li>
-                </ul>
-                <p>Можем выслать готовое КП с цифрами экономии для вашего бизнеса.</p>
-            </div>
-            <div class="answer-avatar"><i class="fas fa-headset"></i></div>
-        </div>
-    </div>
+<section class="container content-wrapper">
+    <div class="dialogue">
 
     <!-- ВОПРОС 7 -->
-    <div class="dialogue-item">
+    <div class="dialogue-item" id="question-7">
         <div class="question">
             <div class="question-avatar"><i class="fas fa-user-tie"></i></div>
             <div class="question-bubble">
@@ -456,7 +63,7 @@
     </div>
 
     <!-- ВОПРОС 8 -->
-    <div class="dialogue-item">
+    <div class="dialogue-item" id="question-8">
         <div class="question">
             <div class="question-avatar"><i class="fas fa-user"></i></div>
             <div class="question-bubble">
@@ -478,16 +85,174 @@
         </div>
     </div>
 
+    <!-- ВОПРОС 9 -->
+    <div class="dialogue-item" id="question-9">
+        <div class="question">
+            <div class="question-avatar"><i class="fas fa-user"></i></div>
+            <div class="question-bubble">
+                <p>«У нас база стоит у бухгалтера, зачем нам ставить себе?»</p>
+                <div class="company">— Клиент</div>
+            </div>
+        </div>
+        <div class="answer">
+            <div class="answer-bubble">
+                <p><i class="fas fa-exclamation-triangle"></i> <strong>У такой работы есть минусы:</strong></p>
+                <ul class="check-list">
+                    <li><i class="fas fa-minus" style="color: #ef4444;"></i> Нет поддержки</li>
+                    <li><i class="fas fa-minus" style="color: #ef4444;"></i> Нет обновлений</li>
+                    <li><i class="fas fa-minus" style="color: #ef4444;"></i> Нет резервных копий</li>
+                </ul>
+            </div>
+            <div class="answer-avatar"><i class="fas fa-headset"></i></div>
+        </div>
+    </div>
+
+<!-- ВОПРОС 1 -->
+    <div class="dialogue-item" id="question-1">
+        <div class="question">
+            <div class="question-avatar"><i class="fas fa-user-tie"></i></div>
+            <div class="question-bubble">
+                <p>«Зачем платить каждый месяц? Купить дешевле — раз и всё.»</p>
+                <div class="company">— Иван, фин. директор</div>
+            </div>
+        </div>
+        <div class="answer">
+            <div class="answer-bubble">
+                <p><i class="fas fa-calculator"></i> <strong>Давайте посчитаем полностью:</strong> покупка коробки 1С (от 5 000 до 50 000₽), потом лицензии на каждого сотрудника (еще 10 000₽ за каждое рабочее место), сервер (от 50 000₽) или мощный ПК, зарплата сисадмина (от 15 000₽/мес) и подписка на обновления ИТС (около 30 000₽/год).</p>
+                <p>В аренде: фиксированный платеж, включены обновления, бэкапы и техподдержка. За 3 года аренда часто <strong>обходится дешевле</strong>, плюс не нужно платить сразу крупную сумму.</p>
+            </div>
+            <div class="answer-avatar"><i class="fas fa-headset"></i></div>
+        </div>
+    </div>
+
+    <!-- ВОПРОС 2 -->
+    <div class="dialogue-item" id="question-2">
+        <div class="question">
+            <div class="question-avatar"><i class="fas fa-user-secret"></i></div>
+            <div class="question-bubble">
+                <p>«Наши данные будут у вас. А если взломают или вы закроетесь?»</p>
+                <div class="company">— Елена, главный бухгалтер</div>
+            </div>
+        </div>
+        <div class="answer">
+            <div class="answer-bubble">
+                <p><i class="fas fa-shield-alt"></i> <strong>Безопасность — наша ответственность.</strong> Ваши данные хранятся в дата-центре с физической защитой, резервным копированием каждые 4 часа и шифрованием каналов. Вирус-шифровальщик не доберется до базы, в отличие от локального ПК.</p>
+                <p>А если мы закроемся (мы работаем 8 лет, но вдруг) — вы в любой момент скачиваете полную копию базы в формате .dt и уходите к другому провайдеру или к себе. Данные ваши, мы лишь арендодатели.</p>
+            </div>
+            <div class="answer-avatar"><i class="fas fa-headset"></i></div>
+        </div>
+    </div><!-- ВОПРОС 3 -->
+    <div class="dialogue-item" id="question-3">
+        <div class="question">
+            <div class="question-avatar"><i class="fas fa-user-md"></i></div>
+            <div class="question-bubble">
+                <p>«А если интернет пропадет? Мы же работать не сможем.»</p>
+                <div class="company">— Сергей, коммерческий директор</div>
+            </div>
+        </div>
+        <div class="answer">
+            <div class="answer-bubble">
+                <p><i class="fas fa-wifi"></i> <strong>Зависимость есть, но она не страшнее, чем у банк-клиента или email.</strong> Без интернета сегодня не работает почти никто. Для 1С достаточно 1-2 Мбит/с, можно работать даже через 4G модем.</p>
+                <p>На случай аварии рекомендуем иметь второй канал (например, USB-модем) — это копейки по сравнению с простоем бизнеса. У нас клиенты работают из кафе, поездов и дач — довольны.</p>
+                <p>+ даем тестовый доступ — проверьте сами.</p>
+            </div>
+            <div class="answer-avatar"><i class="fas fa-headset"></i></div>
+        </div>
+    </div>
+
+    <!-- ВОПРОС 4 -->
+    <div class="dialogue-item" id="question-4">
+        <div class="question">
+            <div class="question-avatar"><i class="fas fa-user-cog"></i></div>
+            <div class="question-bubble">
+                <p>«У нас своя доработанная 1С, не влезет в типовое облако.»</p>
+                <div class="company">— Максим, IT-специалист</div>
+            </div>
+        </div>
+        <div class="answer">
+            <div class="answer-bubble">
+                <p><i class="fas fa-code-branch"></i> <strong>Мы переносим любые конфигурации.</strong> Дайте нам свою базу — мы развернем её на сервере. Вы будете работать точно так же, как и в локальной сети, но со всеми плюсами облака: доступ отовсюду, бэкапы, надежность.</p>
+                <p>Поддерживаем внешние отчеты, печатные формы, обмен с банками и кассами. Всё настраиваем.</p>
+            </div>
+            <div class="answer-avatar"><i class="fas fa-headset"></i></div>
+        </div>
+    </div>
+
+    <!-- ВОПРОС 5 -->
+    <div class="dialogue-item" id="question-5">
+        <div class="question">
+            <div class="question-avatar"><i class="fas fa-user-check"></i></div>
+            <div class="question-bubble">
+                <p>«У нас уже всё есть, своя 1С работает. Зачем менять?»</p>
+                <div class="company">— Дмитрий, владелец</div>
+            </div>
+        </div>
+        <div class="answer">
+            <div class="answer-bubble">
+                <p><i class="fas fa-clock"></i> <strong>Ради вашего же времени и денег.</strong> Сейчас вы платите сисадмину за обслуживание сервера, тратите нервы на обновления отчетности, переживаете за бэкапы. В облаке всё это автоматически.</p>
+                <p>Попробуйте для эксперимента — переведите хотя бы один отдел на 14 дней. Увидите, что задачи решаются быстрее, сотрудники работают из дома, а вы спите спокойно. Не понравится — вернетесь обратно.</p>
+            </div>
+            <div class="answer-avatar"><i class="fas fa-headset"></i></div>
+        </div>
+    </div>
+
+    <!-- ВОПРОС 6 (директорский) -->
+    <div class="dialogue-item" id="question-6">
+        <div class="question">
+            <div class="question-avatar"><i class="fas fa-briefcase"></i></div>
+            <div class="question-bubble">
+                <p>«Надо согласовать с директором / учредителями. Что им сказать?»</p>
+                <div class="company">— Ольга, финансовый менеджер</div>
+            </div>
+        </div>
+        <div class="answer">
+            <div class="answer-bubble">
+                <p><i class="fas fa-chart-pie"></i> <strong>Три аргумента для руководителя:</strong></p>
+                <ul class="check-list">
+                    <li><i class="fas fa-check-circle"></i> Не нужно покупать сервер и платить за него сразу — деньги остаются в обороте.</li>
+                    <li><i class="fas fa-check-circle"></i> Все расходы списываются ежемесячно (уменьшается налог на прибыль).</li>
+                    <li><i class="fas fa-check-circle"></i> Бухгалтер и кладовщик работают удаленно, не выпадают из процессов в форс-мажорах.</li>
+                </ul>
+                <p>Можем выслать готовое КП с цифрами экономии для вашего бизнеса.</p>
+            </div>
+            <div class="answer-avatar"><i class="fas fa-headset"></i></div>
+        </div>
+    </div>
+
+    
+
+    </div>
+
+    <aside class="cases-sidebar">
+        <h3>Кейсы из практики</h3>
+        
+        <div class="case-card">
+            <div class="case-title">Оптовая компания (15 мест)</div>
+            <div class="case-result">
+                <p><strong>Было:</strong> старый сервер постоянно зависал, сотрудники жаловались на скорость.</p>
+                <p><strong>Стало:</strong> перенесли базу за 2 часа. 1С работает быстро, сотрудники могут оформлять заказы удаленно. Экономия на покупке нового сервера — 250 000 ₽.</p>
+            </div>
+        </div>
+
+        <div class="case-card">
+            <div class="case-title">Бухгалтерское агентство</div>
+            <div class="case-result">
+                <p><strong>Было:</strong> 40 баз клиентов разбросаны по разным компьютерам, резервные копии делались вручную.</p>
+                <p><strong>Стало:</strong> все базы в едином защищенном облаке с автобэкапом каждые 4 часа. Владелец бизнеса видит работу каждого бухгалтера.</p>
+            </div>
+        </div>
+
+        <div class="case-card">
+            <div class="case-title">Сеть из 4 розничных точек</div>
+            <div class="case-result">
+                <p><strong>Было:</strong> постоянные проблемы с обменом данными между кассами и центральной базой.</p>
+                <p><strong>Стало:</strong> единая база в облаке 24/7. Данные об остатках актуальны в любую секунду. Забыли про сбои обменов.</p>
+            </div>
+        </div>
+    </aside>
 </section>
 
-<div class="container">
-    <div class="test-drive">
-        <h3>Не верьте на слово — проверьте в деле</h3>
-        <p>Получите полный доступ к 1С в облаке на 14 дней. Абсолютно бесплатно, без привязки карты.</p>
-        <a href="#" class="btn-big"><i class="fas fa-rocket"></i> Хочу тест-драйв</a>
-        <p style="margin-top: 24px; color: #475569;"><i class="fas fa-phone"></i> Или просто позвоните: 8-902-270-82-42</p>
-    </div>
-</div>
+
 
 <footer class="footer-mini">
     <div class="container">
