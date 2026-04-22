@@ -277,3 +277,76 @@
                 font-size: 16px;
             }
         }
+/* Лейаут с колонками */
+.content-wrapper {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 40px;
+    margin: 40px auto;
+    align-items: start;
+}
+
+.content-wrapper .dialogue {
+    margin: 0;
+}
+
+/* Сайдбар с кейсами */
+.cases-sidebar {
+    background: #f8fafc;
+    padding: 32px;
+    border-radius: 24px;
+    border: 1px solid #e2e8f0;
+    position: sticky;
+    top: 100px;
+}
+
+.cases-sidebar h3 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 24px;
+    color: #0f172a;
+}
+
+.case-card {
+    background: white;
+    padding: 24px;
+    border-radius: 16px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+    border: 1px solid #eef2f6;
+}
+
+.case-card:last-child {
+    margin-bottom: 0;
+}
+
+.case-title {
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 12px;
+    color: #2563eb;
+}
+
+.case-result p {
+    font-size: 15px;
+    color: #475569;
+    margin-bottom: 8px;
+}
+
+.case-result p:last-child {
+    margin-bottom: 0;
+}
+
+.case-result strong {
+    color: #1e293b;
+}
+
+@media (max-width: 900px) {
+    .content-wrapper {
+        grid-template-columns: 1fr;
+    }
+    .cases-sidebar {
+        position: static;
+        margin-top: 20px;
+    }
+}
