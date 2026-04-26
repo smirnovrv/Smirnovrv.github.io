@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,259 +8,358 @@
     <!-- Шрифт Inter для читаемости -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&display=swap"
+        rel="stylesheet">
     <!-- Font Awesome 6 (бесплатные иконки) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<header class="header">
+    <header class="header">
+        <div class="container">
+            <div class="logo"><i class="fas fa-cloud"></i> 1С‑Облако</div>
+            <a href="tel:89022708242" class="header-phone"><i class="fas fa-phone-alt"></i> 8-902-270-82-42</a>
+        </div>
+    </header>
+
+    <section class="hero-simple">
+        <div class="container">
+            <h1><span>1С в аренду: максимум возможностей, минимум затрат!</span></h1>
+            <p>Мы не используем шаблонные фразы. Здесь реальные диалоги с клиентами. Читайте и убеждайтесь.</p>
+            <div class="badge"><i class="fas fa-check-circle"></i> Первым 100 клиентам специальная цена 1000 рублей
+            </div>
+        </div>
+    </section>
+
     <div class="container">
-        <div class="logo"><i class="fas fa-cloud"></i> 1С‑Облако</div>
-        <a href="tel:89022708242" class="header-phone"><i class="fas fa-phone-alt"></i> 8-902-270-82-42</a>
-    </div>
-</header>
-
-<section class="hero-simple">
-    <div class="container">
-        <h1><span>1С в аренду: максимум возможностей, минимум затрат!</span></h1>
-        <p>Мы не используем шаблонные фразы. Здесь реальные диалоги с клиентами. Читайте и убеждайтесь.</p>
-        <div class="badge"><i class="fas fa-check-circle"></i> Первым 100 клиентам специальная цена 1000 рублей</div>
-    </div>
-</section>
-
-<div class="container">
-    <div class="divider">
-        <span>⬇ САМЫЕ ЧАСТЫЕ ВОПРОСЫ ⬇</span>
-    </div>
-</div>
-
-<section class="container content-wrapper">
-    <div class="dialogue">
-
-    <!-- ВОПРОС 7 -->
-    <div class="dialogue-item" id="question-7">
-        <div class="question">
-            <div class="question-avatar"><i class="fas fa-user-tie"></i></div>
-            <div class="question-bubble">
-                <p>«Мы работаем в экселе, зачем на 1С?»</p>
-                <div class="company">— Олег, предприниматель</div>
-            </div>
-        </div>
-        <div class="answer">
-            <div class="answer-bubble">
-                <p><i class="fas fa-exclamation-triangle"></i> <strong>У такой работы есть минусы:</strong></p>
-                <ul class="check-list">
-                    <li><i class="fas fa-minus" style="color: #ef4444;"></i> Эксель не умеет хранить историю, нет возможности посмотреть кто, что и когда менял в файле.</li>
-                    <li><i class="fas fa-minus" style="color: #ef4444;"></i> Нельзя вернуть сделанные изменения</li>
-                    <li><i class="fas fa-minus" style="color: #ef4444;"></i> Нет возможности настроить доступ к данным файла</li>
-                    <li><i class="fas fa-minus" style="color: #ef4444;"></i> Данные из файла, нужно передавать бухгалтеру, для сдачи отчетности, приходиться заносить руками, а это возможность сделать ошибки</li>
-                    <li><i class="fas fa-minus" style="color: #ef4444;"></i> Не доступны многие сервисы 1С (ЭДО, клиент-банк, акты сверок)</li>
-                </ul>
-            </div>
-            <div class="answer-avatar"><i class="fas fa-headset"></i></div>
+        <div class="divider">
+            <span>⬇ САМЫЕ ЧАСТЫЕ ВОПРОСЫ ⬇</span>
         </div>
     </div>
 
-    <!-- ВОПРОС 8 -->
-    <div class="dialogue-item" id="question-8">
-        <div class="question">
-            <div class="question-avatar"><i class="fas fa-user"></i></div>
-            <div class="question-bubble">
-                <p>«У нас база стоит у бухгалтера, зачем нам ставить себе?»</p>
-                <div class="company">— Клиент</div>
-            </div>
-        </div>
-        <div class="answer">
-            <div class="answer-bubble">
-                <p><i class="fas fa-exclamation-triangle"></i> <strong>У такой работы есть минусы:</strong></p>
-                <ul class="check-list">
-                    <li><i class="fas fa-minus" style="color: #ef4444;"></i> Риск что бухгалтер не отдаст базу</li>
-                    <li><i class="fas fa-minus" style="color: #ef4444;"></i> Нет контроля бухгалтера. Программа делает это автоматически и Вы можете это увидеть.</li>
-                    <li><i class="fas fa-minus" style="color: #ef4444;"></i> Ваши данные могут быть доступны другим</li>
-                    <li><i class="fas fa-minus" style="color: #ef4444;"></i> Нет резервных копий</li>
-                </ul>
-            </div>
-            <div class="answer-avatar"><i class="fas fa-headset"></i></div>
-        </div>
-    </div>
+    <section class="container content-wrapper">
+        <div class="dialogue">
 
-    <!-- ВОПРОС 9 -->
-    <div class="dialogue-item" id="question-9">
-        <div class="question">
-            <div class="question-avatar"><i class="fas fa-user"></i></div>
-            <div class="question-bubble">
-                <p>«У нас база стоит у бухгалтера, зачем нам ставить себе?»</p>
-                <div class="company">— Клиент</div>
+            <!-- ВОПРОС 7 -->
+            <div class="dialogue-item" id="question-7">
+                <div class="question">
+                    <div class="question-avatar"><i class="fas fa-user-tie"></i></div>
+                    <div class="question-bubble">
+                        <p>«Мы работаем в экселе, зачем на 1С?»</p>
+                        <div class="company">— Олег, предприниматель</div>
+                    </div>
+                </div>
+                <div class="answer">
+                    <div class="answer-bubble">
+                        <p><i class="fas fa-exclamation-triangle"></i> <strong>У такой работы есть минусы:</strong></p>
+                        <ul class="check-list">
+                            <li><i class="fas fa-minus" style="color: #ef4444;"></i> Эксель не умеет хранить историю,
+                                нет возможности посмотреть кто, что и когда менял в файле.</li>
+                            <li><i class="fas fa-minus" style="color: #ef4444;"></i> Нельзя вернуть сделанные изменения
+                            </li>
+                            <li><i class="fas fa-minus" style="color: #ef4444;"></i> Нет возможности настроить доступ к
+                                данным файла</li>
+                            <li><i class="fas fa-minus" style="color: #ef4444;"></i> Данные из файла, нужно передавать
+                                бухгалтеру, для сдачи отчетности, приходиться заносить руками, а это возможность сделать
+                                ошибки</li>
+                            <li><i class="fas fa-minus" style="color: #ef4444;"></i> Не доступны многие сервисы 1С (ЭДО,
+                                клиент-банк, акты сверок)</li>
+                        </ul>
+                    </div>
+                    <div class="answer-avatar"><i class="fas fa-headset"></i></div>
+                </div>
             </div>
-        </div>
-        <div class="answer">
-            <div class="answer-bubble">
-                <p><i class="fas fa-exclamation-triangle"></i> <strong>У такой работы есть минусы:</strong></p>
-                <ul class="check-list">
-                    <li><i class="fas fa-minus" style="color: #ef4444;"></i> Нет поддержки</li>
-                    <li><i class="fas fa-minus" style="color: #ef4444;"></i> Нет обновлений</li>
-                    <li><i class="fas fa-minus" style="color: #ef4444;"></i> Нет резервных копий</li>
-                </ul>
-            </div>
-            <div class="answer-avatar"><i class="fas fa-headset"></i></div>
-        </div>
-    </div>
 
-<!-- ВОПРОС 1 -->
-    <div class="dialogue-item" id="question-1">
-        <div class="question">
-            <div class="question-avatar"><i class="fas fa-user-tie"></i></div>
-            <div class="question-bubble">
-                <p>«Зачем платить каждый месяц? Купить дешевле — раз и всё.»</p>
-                <div class="company">— Иван, фин. директор</div>
+            <!-- ВОПРОС 8 -->
+            <div class="dialogue-item" id="question-8">
+                <div class="question">
+                    <div class="question-avatar"><i class="fas fa-user"></i></div>
+                    <div class="question-bubble">
+                        <p>«У нас база стоит у бухгалтера, зачем нам ставить себе?»</p>
+                        <div class="company">— Клиент</div>
+                    </div>
+                </div>
+                <div class="answer">
+                    <div class="answer-bubble">
+                        <p><i class="fas fa-exclamation-triangle"></i> <strong>У такой работы есть минусы:</strong></p>
+                        <ul class="check-list">
+                            <li><i class="fas fa-minus" style="color: #ef4444;"></i> Риск что бухгалтер не отдаст базу
+                            </li>
+                            <li><i class="fas fa-minus" style="color: #ef4444;"></i> Нет контроля бухгалтера. Программа
+                                делает это автоматически и Вы можете это увидеть.</li>
+                            <li><i class="fas fa-minus" style="color: #ef4444;"></i> Ваши данные могут быть доступны
+                                другим</li>
+                            <li><i class="fas fa-minus" style="color: #ef4444;"></i> Нет резервных копий</li>
+                        </ul>
+                    </div>
+                    <div class="answer-avatar"><i class="fas fa-headset"></i></div>
+                </div>
             </div>
-        </div>
-        <div class="answer">
-            <div class="answer-bubble">
-                <p><i class="fas fa-calculator"></i> <strong>Давайте посчитаем полностью:</strong> покупка коробки 1С (от 5 000 до 50 000₽), потом лицензии на каждого сотрудника (еще 10 000₽ за каждое рабочее место), сервер (от 50 000₽) или мощный ПК, зарплата сисадмина (от 15 000₽/мес) и подписка на обновления ИТС (около 30 000₽/год).</p>
-                <p>В аренде: фиксированный платеж, включены обновления, бэкапы и техподдержка. За 3 года аренда часто <strong>обходится дешевле</strong>, плюс не нужно платить сразу крупную сумму.</p>
-            </div>
-            <div class="answer-avatar"><i class="fas fa-headset"></i></div>
-        </div>
-    </div>
 
-    <!-- ВОПРОС 2 -->
-    <div class="dialogue-item" id="question-2">
-        <div class="question">
-            <div class="question-avatar"><i class="fas fa-user-secret"></i></div>
-            <div class="question-bubble">
-                <p>«Наши данные будут у вас. А если взломают или вы закроетесь?»</p>
-                <div class="company">— Елена, главный бухгалтер</div>
+            <!-- ВОПРОС 9 -->
+            <div class="dialogue-item" id="question-9">
+                <div class="question">
+                    <div class="question-avatar"><i class="fas fa-user"></i></div>
+                    <div class="question-bubble">
+                        <p>«У нас база стоит у бухгалтера, зачем нам ставить себе?»</p>
+                        <div class="company">— Клиент</div>
+                    </div>
+                </div>
+                <div class="answer">
+                    <div class="answer-bubble">
+                        <p><i class="fas fa-exclamation-triangle"></i> <strong>У такой работы есть минусы:</strong></p>
+                        <ul class="check-list">
+                            <li><i class="fas fa-minus" style="color: #ef4444;"></i> Нет поддержки</li>
+                            <li><i class="fas fa-minus" style="color: #ef4444;"></i> Нет обновлений</li>
+                            <li><i class="fas fa-minus" style="color: #ef4444;"></i> Нет резервных копий</li>
+                        </ul>
+                    </div>
+                    <div class="answer-avatar"><i class="fas fa-headset"></i></div>
+                </div>
             </div>
-        </div>
-        <div class="answer">
-            <div class="answer-bubble">
-                <p><i class="fas fa-shield-alt"></i> <strong>Безопасность — наша ответственность.</strong> Ваши данные хранятся в дата-центре с физической защитой, резервным копированием каждые 4 часа и шифрованием каналов. Вирус-шифровальщик не доберется до базы, в отличие от локального ПК.</p>
-                <p>А если мы закроемся (мы работаем 8 лет, но вдруг) — вы в любой момент скачиваете полную копию базы в формате .dt и уходите к другому провайдеру или к себе. Данные ваши, мы лишь арендодатели.</p>
-            </div>
-            <div class="answer-avatar"><i class="fas fa-headset"></i></div>
-        </div>
-    </div><!-- ВОПРОС 3 -->
-    <div class="dialogue-item" id="question-3">
-        <div class="question">
-            <div class="question-avatar"><i class="fas fa-user-md"></i></div>
-            <div class="question-bubble">
-                <p>«А если интернет пропадет? Мы же работать не сможем.»</p>
-                <div class="company">— Сергей, коммерческий директор</div>
-            </div>
-        </div>
-        <div class="answer">
-            <div class="answer-bubble">
-                <p><i class="fas fa-wifi"></i> <strong>Зависимость есть, но она не страшнее, чем у банк-клиента или email.</strong> Без интернета сегодня не работает почти никто. Для 1С достаточно 1-2 Мбит/с, можно работать даже через 4G модем.</p>
-                <p>На случай аварии рекомендуем иметь второй канал (например, USB-модем) — это копейки по сравнению с простоем бизнеса. У нас клиенты работают из кафе, поездов и дач — довольны.</p>
-                <p>+ даем тестовый доступ — проверьте сами.</p>
-            </div>
-            <div class="answer-avatar"><i class="fas fa-headset"></i></div>
-        </div>
-    </div>
 
-    <!-- ВОПРОС 4 -->
-    <div class="dialogue-item" id="question-4">
-        <div class="question">
-            <div class="question-avatar"><i class="fas fa-user-cog"></i></div>
-            <div class="question-bubble">
-                <p>«У нас своя доработанная 1С, не влезет в типовое облако.»</p>
-                <div class="company">— Максим, IT-специалист</div>
+            <!-- ВОПРОС 1 -->
+            <div class="dialogue-item" id="question-1">
+                <div class="question">
+                    <div class="question-avatar"><i class="fas fa-user-tie"></i></div>
+                    <div class="question-bubble">
+                        <p>«Зачем платить каждый месяц? Купить дешевле — раз и всё.»</p>
+                        <div class="company">— Иван, фин. директор</div>
+                    </div>
+                </div>
+                <div class="answer">
+                    <div class="answer-bubble">
+                        <p><i class="fas fa-calculator"></i> <strong>Давайте посчитаем полностью:</strong> покупка
+                            коробки 1С (от 5 000 до 50 000₽), потом лицензии на каждого сотрудника (еще 10 000₽ за
+                            каждое рабочее место), сервер (от 50 000₽) или мощный ПК, зарплата сисадмина (от 15
+                            000₽/мес) и подписка на обновления ИТС (около 30 000₽/год).</p>
+                        <p>В аренде: фиксированный платеж, включены обновления, бэкапы и техподдержка. За 3 года аренда
+                            часто <strong>обходится дешевле</strong>, плюс не нужно платить сразу крупную сумму.</p>
+                    </div>
+                    <div class="answer-avatar"><i class="fas fa-headset"></i></div>
+                </div>
             </div>
-        </div>
-        <div class="answer">
-            <div class="answer-bubble">
-                <p><i class="fas fa-code-branch"></i> <strong>Мы переносим любые конфигурации.</strong> Дайте нам свою базу — мы развернем её на сервере. Вы будете работать точно так же, как и в локальной сети, но со всеми плюсами облака: доступ отовсюду, бэкапы, надежность.</p>
-                <p>Поддерживаем внешние отчеты, печатные формы, обмен с банками и кассами. Всё настраиваем.</p>
+
+            <!-- ВОПРОС 2 -->
+            <div class="dialogue-item" id="question-2">
+                <div class="question">
+                    <div class="question-avatar"><i class="fas fa-user-secret"></i></div>
+                    <div class="question-bubble">
+                        <p>«Наши данные будут у вас. А если взломают или вы закроетесь?»</p>
+                        <div class="company">— Елена, главный бухгалтер</div>
+                    </div>
+                </div>
+                <div class="answer">
+                    <div class="answer-bubble">
+                        <p><i class="fas fa-shield-alt"></i> <strong>Безопасность — наша ответственность.</strong> Ваши
+                            данные хранятся в дата-центре с физической защитой, резервным копированием каждые 4 часа и
+                            шифрованием каналов. Вирус-шифровальщик не доберется до базы, в отличие от локального ПК.
+                        </p>
+                        <p>А если мы закроемся (мы работаем 8 лет, но вдруг) — вы в любой момент скачиваете полную копию
+                            базы в формате .dt и уходите к другому провайдеру или к себе. Данные ваши, мы лишь
+                            арендодатели.</p>
+                    </div>
+                    <div class="answer-avatar"><i class="fas fa-headset"></i></div>
+                </div>
             </div>
-            <div class="answer-avatar"><i class="fas fa-headset"></i></div>
-        </div>
-    </div>
 
-    <!-- ВОПРОС 5 -->
-    <div class="dialogue-item" id="question-5">
-        <div class="question">
-            <div class="question-avatar"><i class="fas fa-user-check"></i></div>
-            <div class="question-bubble">
-                <p>«У нас уже всё есть, своя 1С работает. Зачем менять?»</p>
-                <div class="company">— Дмитрий, владелец</div>
+            <!-- ВОПРОС 3 -->
+            <div class="dialogue-item" id="question-3">
+                <div class="question">
+                    <div class="question-avatar"><i class="fas fa-user-md"></i></div>
+                    <div class="question-bubble">
+                        <p>«А если интернет пропадет? Мы же работать не сможем.»</p>
+                        <div class="company">— Сергей, коммерческий директор</div>
+                    </div>
+                </div>
+                <div class="answer">
+                    <div class="answer-bubble">
+                        <p><i class="fas fa-wifi"></i> <strong>Зависимость есть, но она не страшнее, чем у банк-клиента
+                                или email.</strong> Без интернета сегодня не работает почти никто. Для 1С достаточно 1-2
+                            Мбит/с, можно работать даже через 4G модем.</p>
+                        <p>На случай аварии рекомендуем иметь второй канал (например, USB-модем) — это копейки по
+                            сравнению с простоем бизнеса. У нас клиенты работают из кафе, поездов и дач — довольны.</p>
+                        <p>+ даем тестовый доступ — проверьте сами.</p>
+                    </div>
+                    <div class="answer-avatar"><i class="fas fa-headset"></i></div>
+                </div>
             </div>
-        </div>
-        <div class="answer">
-            <div class="answer-bubble">
-                <p><i class="fas fa-clock"></i> <strong>Ради вашего же времени и денег.</strong> Сейчас вы платите сисадмину за обслуживание сервера, тратите нервы на обновления отчетности, переживаете за бэкапы. В облаке всё это автоматически.</p>
-                <p>Попробуйте для эксперимента — переведите хотя бы один отдел на 14 дней. Увидите, что задачи решаются быстрее, сотрудники работают из дома, а вы спите спокойно. Не понравится — вернетесь обратно.</p>
+
+            <!-- ВОПРОС 4 -->
+            <div class="dialogue-item" id="question-4">
+                <div class="question">
+                    <div class="question-avatar"><i class="fas fa-user-cog"></i></div>
+                    <div class="question-bubble">
+                        <p>«У нас своя доработанная 1С, не влезет в типовое облако.»</p>
+                        <div class="company">— Максим, IT-специалист</div>
+                    </div>
+                </div>
+                <div class="answer">
+                    <div class="answer-bubble">
+                        <p><i class="fas fa-code-branch"></i> <strong>Мы переносим любые конфигурации.</strong> Дайте
+                            нам свою базу — мы развернем её на сервере. Вы будете работать точно так же, как и в
+                            локальной сети, но со всеми плюсами облака: доступ отовсюду, бэкапы, надежность.</p>
+                        <p>Поддерживаем внешние отчеты, печатные формы, обмен с банками и кассами. Всё настраиваем.</p>
+                    </div>
+                    <div class="answer-avatar"><i class="fas fa-headset"></i></div>
+                </div>
             </div>
-            <div class="answer-avatar"><i class="fas fa-headset"></i></div>
-        </div>
-    </div>
 
-    <!-- ВОПРОС 6 (директорский) -->
-    <div class="dialogue-item" id="question-6">
-        <div class="question">
-            <div class="question-avatar"><i class="fas fa-briefcase"></i></div>
-            <div class="question-bubble">
-                <p>«Надо согласовать с директором / учредителями. Что им сказать?»</p>
-                <div class="company">— Ольга, финансовый менеджер</div>
+            <!-- ВОПРОС 5 -->
+            <div class="dialogue-item" id="question-5">
+                <div class="question">
+                    <div class="question-avatar"><i class="fas fa-user-check"></i></div>
+                    <div class="question-bubble">
+                        <p>«У нас уже всё есть, своя 1С работает. Зачем менять?»</p>
+                        <div class="company">— Дмитрий, владелец</div>
+                    </div>
+                </div>
+                <div class="answer">
+                    <div class="answer-bubble">
+                        <p><i class="fas fa-clock"></i> <strong>Ради вашего же времени и денег.</strong> Сейчас вы
+                            платите сисадмину за обслуживание сервера, тратите нервы на обновления отчетности,
+                            переживаете за бэкапы. В облаке всё это автоматически.</p>
+                        <p>Попробуйте для эксперимента — переведите хотя бы один отдел на 14 дней. Увидите, что задачи
+                            решаются быстрее, сотрудники работают из дома, а вы спите спокойно. Не понравится —
+                            вернетесь обратно.</p>
+                    </div>
+                    <div class="answer-avatar"><i class="fas fa-headset"></i></div>
+                </div>
             </div>
-        </div>
-        <div class="answer">
-            <div class="answer-bubble">
-                <p><i class="fas fa-chart-pie"></i> <strong>Три аргумента для руководителя:</strong></p>
-                <ul class="check-list">
-                    <li><i class="fas fa-check-circle"></i> Не нужно покупать сервер и платить за него сразу — деньги остаются в обороте.</li>
-                    <li><i class="fas fa-check-circle"></i> Все расходы списываются ежемесячно (уменьшается налог на прибыль).</li>
-                    <li><i class="fas fa-check-circle"></i> Бухгалтер и кладовщик работают удаленно, не выпадают из процессов в форс-мажорах.</li>
-                </ul>
-                <p>Можем выслать готовое КП с цифрами экономии для вашего бизнеса.</p>
+
+            <!-- ВОПРОС 6 (директорский) -->
+            <div class="dialogue-item" id="question-6">
+                <div class="question">
+                    <div class="question-avatar"><i class="fas fa-briefcase"></i></div>
+                    <div class="question-bubble">
+                        <p>«Надо согласовать с директором / учредителями. Что им сказать?»</p>
+                        <div class="company">— Ольга, финансовый менеджер</div>
+                    </div>
+                </div>
+                <div class="answer">
+                    <div class="answer-bubble">
+                        <p><i class="fas fa-chart-pie"></i> <strong>Три аргумента для руководителя:</strong></p>
+                        <ul class="check-list">
+                            <li><i class="fas fa-check-circle"></i> Не нужно покупать сервер и платить за него сразу —
+                                деньги остаются в обороте.</li>
+                            <li><i class="fas fa-check-circle"></i> Все расходы списываются ежемесячно (уменьшается
+                                налог на прибыль).</li>
+                            <li><i class="fas fa-check-circle"></i> Бухгалтер и кладовщик работают удаленно, не выпадают
+                                из процессов в форс-мажорах.</li>
+                        </ul>
+                        <p>Можем выслать готовое КП с цифрами экономии для вашего бизнеса.</p>
+                    </div>
+                    <div class="answer-avatar"><i class="fas fa-headset"></i></div>
+                </div>
             </div>
-            <div class="answer-avatar"><i class="fas fa-headset"></i></div>
+
         </div>
-    </div>
 
-    
+        <aside class="cases-sidebar">
+            <h3>Кейсы из практики</h3>
 
-    </div>
-
-    <aside class="cases-sidebar">
-        <h3>Кейсы из практики</h3>
-        
-        <div class="case-card">
-            <div class="case-title">Оптовая компания (15 мест)</div>
-            <div class="case-result">
-                <p><strong>Было:</strong> старый сервер постоянно зависал, сотрудники жаловались на скорость.</p>
-                <p><strong>Стало:</strong> перенесли базу за 2 часа. 1С работает быстро, сотрудники могут оформлять заказы удаленно. Экономия на покупке нового сервера — 250 000 ₽.</p>
+            <div class="case-card">
+                <!-- ИП Дуганов -->
+                <div class="case-title">Предприниматель (ИП) + Бухгалтер (2 места)</div>
+                <div class="case-result">
+                    <p><strong>Было:</strong> Документы приходилось возить бухаглтеру, что бы она забила их руками в
+                        программу, в которой кроме меня были и другие ИП и ООО</p>
+                    <p><strong>Стало:</strong> Документы создаем в той же базе, где работает и бухгалтер, настроили ЭДО
+                        и распознование документов!! Отправляем счета и акты сверки по электронной почте прямо из 1С!!
+                    </p>
+                </div>
             </div>
-        </div>
 
-        <div class="case-card">
-            <div class="case-title">Бухгалтерское агентство</div>
-            <div class="case-result">
-                <p><strong>Было:</strong> 40 баз клиентов разбросаны по разным компьютерам, резервные копии делались вручную.</p>
-                <p><strong>Стало:</strong> все базы в едином защищенном облаке с автобэкапом каждые 4 часа. Владелец бизнеса видит работу каждого бухгалтера.</p>
+            <!-- Мастер РА -->
+            <div class="case-card">
+                <div class="case-title">Малое произваодство (8 мест)</div>
+                <div class="case-result">
+                    <p><strong>Было:</strong> Самописная программа 1С, стояла на компьютере в офисе, были перебои с
+                        электричеством, в выходные приходилось выключать. не было удалённого доступа (работать в
+                        программе, можно было только с офисе), копии программы не делались. Для обслуживания компьютера
+                        приходилось платить IT-специалисту, приходилось покупать детали для компьютера</p>
+                    <p><strong>Стало:</strong>Теперь у нас есть постоянно работающая и доступная 24/7/365 программа, нет
+                        необходимости организовывать (покупать компьютеры и другое) рабочие места сотрудникам, некоторые
+                        работают из дома, даже вечером. Сделана выгрузка в Бухгалтерию. Раз в неделю делаются резервные
+                        копии программы</p>
+                </div>
             </div>
-        </div>
 
-        <div class="case-card">
-            <div class="case-title">Сеть из 4 розничных точек</div>
-            <div class="case-result">
-                <p><strong>Было:</strong> постоянные проблемы с обменом данными между кассами и центральной базой.</p>
-                <p><strong>Стало:</strong> единая база в облаке 24/7. Данные об остатках актуальны в любую секунду. Забыли про сбои обменов.</p>
+            <!-- ТК Электротехника -->
+            <div class="case-card">
+                <div class="case-title">Оптовая компания</div>
+                <div class="case-result">
+                    <p><strong>Было:</strong> Стояла старая версия программы, в которой не было возможности применять
+                        бонусы, скидки, выгружать товары на маркетплейсы. Не было выгрузки в бухгалтерию т.к. Программа
+                        была не на поддержке фирмы 1С, что затрудняло поиск программиста 1С. </p>
+                    <p><strong>Стало:</strong>Программа была обновлена до последней версии, в которой был настроен обмен
+                        с маркетплейсами. Установлена программа 1С Бухгалтерия, настроен постоянные обмен между
+                        программами 1С. Работа с 1с-ком!</p>
+                </div>
             </div>
+
+            <!-- Дека -->
+            <div class="case-card">
+                <div class="case-title">Производственная коммерческая фирма</div>
+                <div class="case-result">
+                    <p><strong>Было:</strong> Программа находилось на сервере другой организации, т.к. покупать свой
+                        сервер и обслуживать, было слишком затратно, для обновления программы приходилось выполнять в
+                        строго выделенное время, что не всегда было удобно, IT-специалисты другой организации, иногда
+                        забывали предоставить доступ, в т.ч. бухгалтеру! </p>
+                    <p><strong>Стало:</strong> Программы находятся "в облаке", с доступом 24/7/365, настроен регулярный
+                        обмен между программами 1С, бухгалтерия вовремя сдает отчеты! </p>
+                </div>
+            </div>
+
+            <!-- РВС -->
+            <div class="case-card">
+                <div class="case-title">Бухгалтерское агентство</div>
+                <div class="case-result">
+                    <p><strong>Было:</strong> Программы находились в разных местах, в офисе и у бухгалтера, были старых,
+                        не современных версий, многие функции были не доступны (ЭДО, ВЕТИС, Честный знак).Поставщики
+                        требовали работы через электронный документооборот, покупатели просили документы правильной
+                        (новой) формы. По этому поводу были конфликты с бухгалтерией, бухгалтер отказывался
+                        предоставлять данные, т.к. её программа была одна, общая для всех! </p>
+                    <p><strong>Стало:</strong> Перешли на новую версию программы для торговли, прошли обучение, из
+                        программы бухгалтера, с помощью 1с-ника, выгрузили данные по своей организации, поставил
+                        бухгалтерскую программу "себе", поменяли бухгалтерию. Теперь мы можем за ней наблюдать и
+                        контролировать, (программа следить за правильностью работы бухгалтера) в любой момент увидеть
+                        состояние БУ, какие отчеты сданы, какие нет, штрафы и пени от налоговой! </p>
+                </div>
+            </div>
+
+            <!-- риски если программа у бухгалтера          
+            1. Потеря базы и возможное вымогательство
+            2. Переплата налогов и другие ошибки
+            3. Откровенное воровство
+            4. Корыстное использование информации о вашем бизнесе
+            -->
+
+            <!-- МВ -->
+            <div class="case-card">
+                <div class="case-title">Бухгалтерское агентство</div>
+                <div class="case-result">
+                    <p><strong>Было:</strong> 40 баз клиентов разбросаны по разным компьютерам, резервные копии делались
+                        вручную.</p>
+                    <p><strong>Стало:</strong> Все базы в едином защищенном облаке с созданием копий. Некоторые клиенты
+                        агентства стали работают в программе, что упростило и ускорило работу с документами клиентов.</p>
+                </div>
+            </div>
+            <!-- Спецпредлоджение для бухгалтерии -->
+
+        </aside>
+    </section>
+
+    <footer class="footer-mini">
+        <div class="container">
+            <p>© 2025 1С‑Облако — аренда 1С с человеческим лицом</p>
+            <p style="margin-top: 8px;">* Все ответы основаны на реальных диалогах с клиентами</p>
         </div>
-    </aside>
-</section>
-
-
-
-<footer class="footer-mini">
-    <div class="container">
-        <p>© 2025 1С‑Облако — аренда 1С с человеческим лицом</p>
-        <p style="margin-top: 8px;">* Все ответы основаны на реальных диалогах с клиентами</p>
-    </div>
-</footer>
+    </footer>
 
 </body>
+
 </html>
