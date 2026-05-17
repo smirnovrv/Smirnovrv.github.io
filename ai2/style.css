@@ -80,6 +80,16 @@
         .header-contact--phone:hover {
             background: #e2e8f0;
         }
+        .header-contact--doc {
+            background: #fef3c7;
+            color: #92400e;
+        }
+        .header-contact--doc i {
+            color: #b45309;
+        }
+        .header-contact--doc:hover {
+            background: #fde68a;
+        }
         /* Вместо fa-comments — метка МАХ для ссылок MAX */
         .max-logo-mark {
             display: inline-flex;
@@ -339,6 +349,321 @@
             .onec-services-list {
                 grid-template-columns: repeat(2, minmax(0, 1fr));
                 gap: 32px 16px;
+            }
+        }
+
+        /* Расчёт стоимости */
+        .pricing {
+            padding: 56px 0 48px;
+            background: #ffffff;
+            border-top: 1px solid #e2e8f0;
+        }
+        .pricing-title {
+            font-size: clamp(1.5rem, 3vw, 2rem);
+            font-weight: 700;
+            color: #0f172a;
+            text-align: center;
+            margin: 0 0 32px;
+            letter-spacing: -0.02em;
+        }
+        .pricing-table-wrap {
+            max-width: 960px;
+            margin: 0 auto 40px;
+            overflow-x: auto;
+            border-radius: 16px;
+            border: 1px solid #e2e8f0;
+            box-shadow: 0 4px 24px rgba(15, 23, 42, 0.06);
+        }
+        .pricing-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 16px;
+            background: #fff;
+        }
+        .pricing-table th,
+        .pricing-table td {
+            padding: 16px 20px;
+            text-align: left;
+            vertical-align: top;
+            border-bottom: 1px solid #eef2f6;
+        }
+        .pricing-table thead th {
+            background: #f1f5f9;
+            font-weight: 700;
+            color: #0f172a;
+            font-size: 14px;
+            line-height: 1.4;
+        }
+        .pricing-table tbody tr:last-child td {
+            border-bottom: none;
+        }
+        .pricing-table tbody tr:hover td {
+            background: #f8fafc;
+        }
+        .pricing-table-price {
+            font-weight: 700;
+            color: #1d4ed8;
+            white-space: nowrap;
+        }
+        .pricing-examples {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 24px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .pricing-example {
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 16px;
+            padding: 24px;
+        }
+        .pricing-example-title {
+            font-size: 1.05rem;
+            font-weight: 700;
+            color: #1e40af;
+            margin: 0 0 14px;
+            line-height: 1.35;
+        }
+        .pricing-example p {
+            font-size: 15px;
+            line-height: 1.55;
+            color: #475569;
+            margin: 0 0 12px;
+        }
+        .pricing-example p:last-child {
+            margin-bottom: 0;
+        }
+        .pricing-example-result {
+            margin-top: 14px;
+            padding-top: 14px;
+            border-top: 1px dashed #cbd5e1;
+            color: #0f172a !important;
+        }
+        .pricing-example-result strong {
+            color: #1d4ed8;
+            font-weight: 700;
+        }
+        @media (max-width: 991px) {
+            .pricing-examples {
+                grid-template-columns: 1fr;
+            }
+        }
+        @media (max-width: 640px) {
+            .pricing-table th,
+            .pricing-table td {
+                padding: 12px 14px;
+                font-size: 14px;
+            }
+        }
+
+        /* Калькулятор стоимости */
+        .pricing-calculator {
+            max-width: 960px;
+            margin: 0 auto 48px;
+            padding: 28px;
+            background: linear-gradient(135deg, #f8fafc 0%, #eef2ff 100%);
+            border: 1px solid #e2e8f0;
+            border-radius: 20px;
+        }
+        .pricing-calculator-title {
+            font-size: 1.35rem;
+            font-weight: 700;
+            color: #0f172a;
+            margin: 0 0 8px;
+        }
+        .pricing-calculator-hint {
+            font-size: 15px;
+            color: #64748b;
+            margin: 0 0 24px;
+            line-height: 1.5;
+        }
+        .pricing-programs {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-bottom: 20px;
+        }
+        .pricing-program-row {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            padding: 16px;
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+            border-radius: 14px;
+        }
+        .pricing-program-fields {
+            flex: 1;
+            display: grid;
+            grid-template-columns: 1fr auto;
+            gap: 12px 16px;
+            align-items: end;
+        }
+        .pricing-field {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+        .pricing-field--users {
+            min-width: 120px;
+        }
+        .pricing-field--dev {
+            grid-column: 1 / -1;
+            flex-direction: row;
+            align-items: center;
+            gap: 10px;
+            font-size: 14px;
+            color: #334155;
+            cursor: pointer;
+        }
+        .pricing-field--dev input {
+            width: 18px;
+            height: 18px;
+            accent-color: #2563eb;
+        }
+        .pricing-field-label {
+            font-size: 12px;
+            font-weight: 600;
+            color: #64748b;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+        }
+        .pricing-input {
+            font-family: inherit;
+            font-size: 15px;
+            padding: 10px 12px;
+            border: 1px solid #cbd5e1;
+            border-radius: 10px;
+            color: #0f172a;
+            background: #fff;
+        }
+        .pricing-input:focus {
+            outline: none;
+            border-color: #2563eb;
+            box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+        }
+        .pricing-input--users {
+            text-align: center;
+        }
+        .pricing-calculator-toolbar {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 24px;
+        }
+        .pricing-presets {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 8px;
+        }
+        .pricing-presets-label {
+            font-size: 14px;
+            color: #64748b;
+            font-weight: 500;
+        }
+        .pricing-btn {
+            font-family: inherit;
+            font-size: 14px;
+            font-weight: 600;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: background 0.2s, transform 0.15s;
+        }
+        .pricing-btn--add {
+            padding: 10px 18px;
+            background: #2563eb;
+            color: #fff;
+        }
+        .pricing-btn--add:hover {
+            background: #1d4ed8;
+        }
+        .pricing-btn--preset {
+            padding: 8px 14px;
+            background: #e2e8f0;
+            color: #334155;
+        }
+        .pricing-btn--preset:hover {
+            background: #cbd5e1;
+        }
+        .pricing-btn--remove {
+            padding: 10px 12px;
+            background: #fef2f2;
+            color: #b91c1c;
+            flex-shrink: 0;
+        }
+        .pricing-btn--remove:hover {
+            background: #fee2e2;
+        }
+        .pricing-calculator-result {
+            padding: 20px 22px;
+            background: #ffffff;
+            border-radius: 14px;
+            border: 1px solid #e2e8f0;
+        }
+        .pricing-result-heading {
+            font-size: 14px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            color: #64748b;
+            margin: 0 0 12px;
+        }
+        .pricing-breakdown {
+            list-style: none;
+            margin: 0 0 16px;
+            padding: 0;
+        }
+        .pricing-breakdown li {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 8px 16px;
+            padding: 10px 0;
+            border-bottom: 1px solid #f1f5f9;
+            font-size: 15px;
+        }
+        .pricing-breakdown li:last-child {
+            border-bottom: none;
+        }
+        .pricing-breakdown-sum {
+            margin-top: 4px;
+            padding-top: 14px !important;
+            border-top: 2px dashed #cbd5e1 !important;
+            font-weight: 600;
+        }
+        .pricing-breakdown-name {
+            color: #0f172a;
+            font-weight: 600;
+        }
+        .pricing-breakdown-formula {
+            color: #1d4ed8;
+            font-weight: 500;
+        }
+        .pricing-total-line {
+            margin: 0;
+            font-size: 18px;
+            color: #0f172a;
+        }
+        .pricing-total-line strong {
+            font-size: 1.35em;
+            color: #1d4ed8;
+        }
+        @media (max-width: 640px) {
+            .pricing-calculator {
+                padding: 18px;
+            }
+            .pricing-program-fields {
+                grid-template-columns: 1fr;
+            }
+            .pricing-field--users {
+                min-width: 0;
             }
         }
 

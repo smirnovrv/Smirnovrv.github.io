@@ -22,6 +22,9 @@
         <div class="container">
             <div class="logo"><i class="fas fa-cloud"></i> 1С‑Облако</div>
             <div class="header-actions">
+                <a href="dogovor.pdf" class="header-contact header-contact--doc" download="Договор.pdf">
+                    <i class="fas fa-file-download" aria-hidden="true"></i> Договор
+                </a>
                 <a href="https://t.me/RV_Smirnov" class="header-contact header-contact--telegram" target="_blank"
                     rel="noopener noreferrer"><i class="fab fa-telegram" aria-hidden="true"></i>
                     Telegram&nbsp;@RV_Smirnov</a>
@@ -190,6 +193,92 @@
                     </div>
                 </li>
             </ul>
+        </div>
+    </section>
+
+    <section class="pricing" id="pricing" aria-label="Расчёт стоимости">
+        <div class="container">
+            <h2 class="pricing-title">Расчёт стоимости</h2>
+
+            <div class="pricing-table-wrap">
+                <table class="pricing-table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Наименование услуги</th>
+                            <th scope="col">Единица оказания</th>
+                            <th scope="col">Цена, рубль за 1 месяц оказания услуг</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Услуга «Аренда вертуального ЦОДа»</td>
+                            <td>1 пользователь</td>
+                            <td class="pricing-table-price">1&nbsp;500 рублей</td>
+                        </tr>
+                        <tr>
+                            <td>Услуга «Разработка ПО»</td>
+                            <td>1 пользователь</td>
+                            <td class="pricing-table-price">3&nbsp;500 рублей</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="pricing-calculator" id="pricing-calculator">
+                <h3 class="pricing-calculator-title">Калькулятор стоимости</h3>
+                <p class="pricing-calculator-hint">Укажите программы 1С и число пользователей. Для каждой программы можно
+                    подключить услугу «Разработка ПО» (+3&nbsp;500 ₽ за пользователя в месяц).</p>
+
+                <div id="pricing-programs" class="pricing-programs" role="list"></div>
+
+                <div class="pricing-calculator-toolbar">
+                    <button type="button" class="pricing-btn pricing-btn--add" id="pricing-add-program">
+                        <i class="fas fa-plus" aria-hidden="true"></i> Добавить программу
+                    </button>
+                    <div class="pricing-presets">
+                        <span class="pricing-presets-label">Загрузить пример:</span>
+                        <button type="button" class="pricing-btn pricing-btn--preset" data-preset="1">№1</button>
+                        <button type="button" class="pricing-btn pricing-btn--preset" data-preset="2">№2</button>
+                        <button type="button" class="pricing-btn pricing-btn--preset" data-preset="3">№3</button>
+                    </div>
+                </div>
+
+                <div class="pricing-calculator-result" aria-live="polite">
+                    <h4 class="pricing-result-heading">Расчёт</h4>
+                    <ul id="pricing-breakdown" class="pricing-breakdown"></ul>
+                    <p class="pricing-total-line">
+                        Сумма ежемесячной аренды: <strong id="pricing-total">0</strong> ₽
+                    </p>
+                </div>
+            </div>
+
+            <div class="pricing-examples">
+                <article class="pricing-example">
+                    <h3 class="pricing-example-title">Пример расчёта стоимости №1</h3>
+                    <p>Одна программа: 1С Бухгалтерия, работают 2 человека/пользователя (собственник + бухгалтер или
+                        собственник + менеджер).</p>
+                    <p>Одна услуга «Аренда вертуального ЦОДа».</p>
+                    <p class="pricing-example-result">Сумма ежемесячной аренды будет <strong>2 × 1&nbsp;500 = 3&nbsp;000
+                            рублей</strong>.</p>
+                </article>
+
+                <article class="pricing-example">
+                    <h3 class="pricing-example-title">Пример расчёта стоимости №2</h3>
+                    <p>Две программы: 1С Торговля + 1С Бухгалтерия. В 1С Торговля работают 4 пользователя, в 1С
+                        Бухгалтерия работает 1 пользователь.</p>
+                    <p>Одна услуга «Аренда вертуального ЦОДа».</p>
+                    <p class="pricing-example-result">Сумма ежемесячной аренды будет <strong>4 × 1&nbsp;500 + 1 ×
+                            1&nbsp;500 = 7&nbsp;500 рублей</strong>.</p>
+                </article>
+
+                <article class="pricing-example">
+                    <h3 class="pricing-example-title">Пример расчёта стоимости №3</h3>
+                    <p>Если для примера №2 требуется услуга «Разработка ПО» для программы 1С Торговля, тогда расчёт для
+                        примера №2 будет выглядеть так:</p>
+                    <p class="pricing-example-result"><strong>4 × (1&nbsp;500 + 3&nbsp;500) + 1 × 1&nbsp;500 = 21&nbsp;500
+                            рублей</strong>.</p>
+                </article>
+            </div>
         </div>
     </section>
 
@@ -522,6 +611,7 @@
         </div>
     </footer>
 
+    <script src="pricing-calculator.js"></script>
 </body>
 
 </html>
