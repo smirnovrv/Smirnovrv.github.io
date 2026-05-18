@@ -1440,12 +1440,14 @@
 
 .guide-figure img {
     display: block;
-    max-width: 100%;
+    width: 100%;
+    max-width: 800px;
     height: auto;
     margin: 0 auto;
     border: 1px solid #e2e8f0;
     border-radius: 12px;
     box-shadow: 0 8px 30px rgba(15, 23, 42, 0.08);
+    background: #f8fafc;
 }
 
 .guide-note {
