@@ -12,6 +12,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+    <base href="./">
 </head>
 
 <body class="guide-page">
@@ -62,8 +63,8 @@
                         <p>После перехода по ссылке выберите нужный файл и сохраните его. Обычно загрузки попадают в
                             папку «Загрузки».</p>
                         <figure class="guide-figure">
-                            <img src="img/guide/01-yandex-download.svg" width="800" height="420"
-                                alt="Скачивание архива тонкого клиента с Яндекс.Диска в папку Загрузки" loading="lazy">
+                            <img src="./img/guide/01-download.png" width="900" height="auto"
+                                alt="Скачанный архив в папке Загрузки" loading="lazy">
                         </figure>
                     </li>
                     <li class="guide-step">
@@ -71,23 +72,23 @@
                         <p>У каждого пользователя это может выглядеть по-разному — используйте встроенную распаковку
                             Windows или программу-архиватор.</p>
                         <figure class="guide-figure">
-                            <img src="img/guide/02-extract-archive.svg" width="800" height="360"
-                                alt="Распаковка zip-архива в папку с файлами установки" loading="lazy">
+                            <img src="./img/guide/02-extract.jpg" width="900" height="auto"
+                                alt="Распаковка архива с дистрибутивом 1С" loading="lazy">
                         </figure>
                     </li>
                     <li class="guide-step">
                         <h3 class="guide-step-title">Запустите установку</h3>
                         <p>Откройте папку, найдите файл <strong>setup.exe</strong> и запустите его двойным щелчком.</p>
                         <figure class="guide-figure">
-                            <img src="img/guide/03-setup-folder.svg" width="800" height="380"
-                                alt="Папка с файлом setup.exe для установки" loading="lazy">
+                            <img src="./img/guide/03-setup-exe.png" width="900" height="auto"
+                                alt="Запуск файла setup.exe" loading="lazy">
                         </figure>
                     </li>
                     <li class="guide-step">
                         <h3 class="guide-step-title">Следуйте шагам мастера установки</h3>
                         <p>Нажимайте «Далее», пока установка не завершится. На рабочем столе появится ярлык 1С.</p>
                         <figure class="guide-figure">
-                            <img src="img/guide/04-install-wizard.svg" width="800" height="440"
+                            <img src="./img/guide/04-install-wizard.png" width="900" height="auto"
                                 alt="Мастер установки 1С:Предприятие" loading="lazy">
                         </figure>
                     </li>
@@ -106,12 +107,12 @@
                         <p>Запустите 1С и нажмите кнопку <strong>«Добавить…»</strong>, затем выберите добавление
                             информационной базы на сервере.</p>
                         <figure class="guide-figure">
-                            <img src="img/guide/05-1c-launcher-add.svg" width="800" height="400"
+                            <img src="./img/guide/05-launcher-add.png" width="900" height="auto"
                                 alt="Окно запуска 1С с кнопкой Добавить" loading="lazy">
                         </figure>
                         <figure class="guide-figure">
-                            <img src="img/guide/06-add-database.svg" width="800" height="420"
-                                alt="Мастер добавления информационной базы на сервере" loading="lazy">
+                            <img src="./img/guide/06-add-database.png" width="900" height="auto"
+                                alt="Мастер добавления информационной базы" loading="lazy">
                         </figure>
                     </li>
                     <li class="guide-step">
@@ -122,8 +123,8 @@
                         <p>Выберите тип <strong>«На веб-сервере»</strong> и в поле <strong>«Адрес информационной
                                 базы»</strong> вставьте ссылку из письма, которое мы вам прислали.</p>
                         <figure class="guide-figure">
-                            <img src="img/guide/07-web-server-url.svg" width="800" height="440"
-                                alt="Поле адреса информационной базы на веб-сервере" loading="lazy">
+                            <img src="./img/guide/07-web-server.png" width="900" height="auto"
+                                alt="Адрес информационной базы на веб-сервере" loading="lazy">
                         </figure>
                     </li>
                     <li class="guide-step">
@@ -131,7 +132,7 @@
                         <p>В поле дополнительных параметров укажите:</p>
                         <p class="guide-code">/HttpsForceSSLv3</p>
                         <figure class="guide-figure">
-                            <img src="img/guide/08-extra-params.svg" width="800" height="400"
+                            <img src="./img/guide/08-extra-params.png" width="900" height="auto"
                                 alt="Дополнительный параметр запуска HttpsForceSSLv3" loading="lazy">
                         </figure>
                     </li>
@@ -139,6 +140,8 @@
             </section>
 
             <div class="guide-help">
+                <p class="guide-credits">Иллюстрации: <a href="https://icbo.ru/help/thinclient/" target="_blank"
+                        rel="noopener noreferrer">icbo.ru</a>, smirnovrv.ru</p>
                 <p>Если что-то не получается — напишите нам в
                     <a href="https://t.me/RV_Smirnov" target="_blank" rel="noopener noreferrer">Telegram</a> или
                     <a href="https://max.ru/u/f9LHodD0cOIa-M9bdcclnV9Sy0dtqQRkIHLEJwt8Tp8bf-06lC7p9XwRAHo" target="_blank"

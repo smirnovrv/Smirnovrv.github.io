@@ -1491,9 +1491,23 @@
 }
 
 .guide-help p {
-    margin: 0;
+    margin: 0 0 12px;
     font-size: 1rem;
     color: #475569;
+}
+
+.guide-help p:last-child {
+    margin-bottom: 0;
+}
+
+.guide-credits {
+    font-size: 0.875rem !important;
+    color: #94a3b8 !important;
+}
+
+.guide-credits a {
+    color: #64748b;
+    text-decoration: underline;
 }
 
 .guide-help a {
