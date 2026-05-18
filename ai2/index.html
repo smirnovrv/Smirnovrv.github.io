@@ -22,6 +22,9 @@
         <div class="container">
             <div class="logo"><i class="fas fa-cloud"></i> 1С‑Облако</div>
             <div class="header-actions">
+                <a href="#pricing" class="header-contact header-contact--pricing">
+                    <i class="fas fa-calculator" aria-hidden="true"></i> Расчёт стоимости
+                </a>
                 <a href="dogovor.pdf" class="header-contact header-contact--doc" download="Договор.pdf">
                     <i class="fas fa-file-download" aria-hidden="true"></i> Договор
                 </a>
@@ -258,7 +261,7 @@
                     <p>Одна программа: 1С Бухгалтерия, работают 2 человека/пользователя (собственник + бухгалтер или
                         собственник + менеджер).</p>
                     <p>Одна услуга «Аренда вертуального ЦОДа».</p>
-                    <p class="pricing-example-result">Сумма ежемесячной аренды будет <strong>2 × 1&nbsp;500 = 3&nbsp;000
+                    <p class="pricing-example-result">Сумма ежемесячной аренды будет <br><strong>2 × 1&nbsp;500 = 3&nbsp;000
                             рублей</strong>.</p>
                 </article>
 
@@ -267,7 +270,7 @@
                     <p>Две программы: 1С Торговля + 1С Бухгалтерия. В 1С Торговля работают 4 пользователя, в 1С
                         Бухгалтерия работает 1 пользователь.</p>
                     <p>Одна услуга «Аренда вертуального ЦОДа».</p>
-                    <p class="pricing-example-result">Сумма ежемесячной аренды будет <strong>4 × 1&nbsp;500 + 1 ×
+                    <p class="pricing-example-result">Сумма ежемесячной аренды будет <br><strong>4 × 1&nbsp;500 + 1 ×
                             1&nbsp;500 = 7&nbsp;500 рублей</strong>.</p>
                 </article>
 
@@ -275,10 +278,54 @@
                     <h3 class="pricing-example-title">Пример расчёта стоимости №3</h3>
                     <p>Если для примера №2 требуется услуга «Разработка ПО» для программы 1С Торговля, тогда расчёт для
                         примера №2 будет выглядеть так:</p>
-                    <p class="pricing-example-result"><strong>4 × (1&nbsp;500 + 3&nbsp;500) + 1 × 1&nbsp;500 = 21&nbsp;500
+                    <p class="pricing-example-result">Сумма ежемесячной аренды будет<br><strong>4 × (1&nbsp;500 + 3&nbsp;500) + 1 × 1&nbsp;500 = 21&nbsp;500
                             рублей</strong>.</p>
                 </article>
             </div>
+        </div>
+    </section>
+
+    <section class="workflow" id="workflow" aria-label="Порядок работы">
+        <div class="container">
+            <header class="workflow-header">
+                <div class="workflow-header-icon" aria-hidden="true"><i class="fas fa-route"></i></div>
+                <h2 class="workflow-title">Порядок работы</h2>
+                <p class="workflow-lead">Как подключиться к 1С в облаке — от оферты до первого входа в программу</p>
+            </header>
+            <ol class="workflow-steps">
+                <li class="workflow-step">
+                    <span class="workflow-step-num" aria-hidden="true">1</span>
+                    <p class="workflow-step-text">Ознакомьтесь с <a href="dogovor.pdf" download="Договор.pdf">офертой</a></p>
+                </li>
+                <li class="workflow-step">
+                    <span class="workflow-step-num" aria-hidden="true">2</span>
+                    <p class="workflow-step-text">Выберите 1С и количество пользователей в <a href="#pricing">разделе расчёта стоимости</a></p>
+                </li>
+                <li class="workflow-step">
+                    <span class="workflow-step-num" aria-hidden="true">3</span>
+                    <p class="workflow-step-text">Отправьте нам реквизиты в <a href="https://max.ru/u/f9LHodD0cOIa-M9bdcclnV9Sy0dtqQRkIHLEJwt8Tp8bf-06lC7p9XwRAHo" target="_blank" rel="noopener noreferrer">MAX</a> или <a href="https://t.me/RV_Smirnov" target="_blank" rel="noopener noreferrer">Telegram</a></p>
+                </li>
+                <li class="workflow-step">
+                    <span class="workflow-step-num" aria-hidden="true">4</span>
+                    <p class="workflow-step-text">Ознакомьтесь и подпишите полученный договор</p>
+                </li>
+                <li class="workflow-step">
+                    <span class="workflow-step-num" aria-hidden="true">5</span>
+                    <p class="workflow-step-text">Оплатите полученный счёт</p>
+                </li>
+                <li class="workflow-step">
+                    <span class="workflow-step-num" aria-hidden="true">6</span>
+                    <p class="workflow-step-text">Отправьте ФИО пользователей программы</p>
+                </li>
+                <li class="workflow-step">
+                    <span class="workflow-step-num" aria-hidden="true">7</span>
+                    <p class="workflow-step-text">Ознакомьтесь с инструкцией</p>
+                </li>
+                <li class="workflow-step workflow-step--final">
+                    <span class="workflow-step-num" aria-hidden="true">8</span>
+                    <p class="workflow-step-text">Пользуйтесь 1С!</p>
+                </li>
+            </ol>
         </div>
     </section>
 
@@ -288,7 +335,8 @@
         </div>
     </div>
 
-    <section class="container content-wrapper">
+    <section class="faq-cases-row" aria-label="Вопросы и кейсы">
+        <div class="container faq-cases-grid">
         <div class="dialogue">
 
             <!-- ВОПРОС 7 -->
@@ -506,12 +554,17 @@
 
         </div>
 
-        <aside class="cases-sidebar">
-            <h3>Кейсы из практики</h3>
+        <aside class="cases-section" id="cases" aria-label="Кейсы из практики">
+            <header class="cases-header">
+                <div class="cases-header-icon" aria-hidden="true"><i class="fas fa-briefcase"></i></div>
+                <h2 class="cases-title">Кейсы из практики</h2>
+                <p class="cases-lead">Реальные истории клиентов: что было до облака и что изменилось после перехода на 1С.</p>
+            </header>
+            <div class="cases-grid">
 
             <div class="case-card">
                 <!-- ИП Дуганов -->
-                <div class="case-title">Предприниматель (ИП) + Бухгалтер (2 места)</div>
+                <div class="case-title">Предприниматель (ИП) + бухгалтер <span class="case-badge">2 пользователя</span></div>
                 <div class="case-result">
                     <p><strong>Было:</strong> Документы приходилось возить бухаглтеру, что бы она забила их руками в
                         программу, в которой кроме меня были и другие ИП и ООО</p>
@@ -523,7 +576,7 @@
 
             <!-- Мастер РА -->
             <div class="case-card">
-                <div class="case-title">Малое производство (8 мест)</div>
+                <div class="case-title">Малое производство <span class="case-badge">8 пользователей</span></div>
                 <div class="case-result">
                     <p><strong>Было:</strong> Самописная программа 1С, стояла на компьютере в офисе, были перебои с
                         электричеством, в выходные приходилось выключать. не было удалённого доступа (работать в
@@ -538,7 +591,7 @@
 
             <!-- ТК Электротехника -->
             <div class="case-card">
-                <div class="case-title">Оптовая компания (4 места)</div>
+                <div class="case-title">Оптовая компания <span class="case-badge">4 пользователя</span></div>
                 <div class="case-result">
                     <p><strong>Было:</strong> Стояла старая версия программы, в которой не было возможности применять
                         бонусы, скидки, выгружать товары на маркетплейсы. Не было выгрузки в бухгалтерию т.к. Программа
@@ -551,7 +604,7 @@
 
             <!-- Дека -->
             <div class="case-card">
-                <div class="case-title">Производственная коммерческая фирма (5 мест)</div>
+                <div class="case-title">Производственная коммерческая фирма <span class="case-badge">5 пользователей</span></div>
                 <div class="case-result">
                     <p><strong>Было:</strong> Программа находилось на сервере другой организации, т.к. покупать свой
                         сервер и обслуживать, было слишком затратно, для обновления программы приходилось выполнять в
@@ -564,7 +617,7 @@
 
             <!-- РВС -->
             <div class="case-card">
-                <div class="case-title">Оптовая компания (9 мест)</div>
+                <div class="case-title">Оптовая компания <span class="case-badge">9 пользователей</span></div>
                 <div class="case-result">
                     <p><strong>Было:</strong> Программы находились в разных местах, в офисе и у бухгалтера, были старых,
                         не современных версий, многие функции были не доступны (ЭДО, ВЕТИС, Честный знак).Поставщики
@@ -588,8 +641,8 @@
             -->
 
             <!-- МВ -->
-            <div class="case-card">
-                <div class="case-title">Бухгалтерское агентство (15 мест) *Спеццена </div>
+            <article class="case-card case-card--featured">
+                <div class="case-title">Бухгалтерское агентство <span class="case-badge">15 пользователей · спеццена</span></div>
                 <div class="case-result">
                     <p><strong>Было:</strong> 40 баз клиентов разбросаны по разным компьютерам, резервные копии делались
                         вручную.</p>
@@ -598,10 +651,10 @@
                         Есть возможность получать поддержку фирмы 1С по работе в программе, консультации по
                         законодательству, ответы аудиторов</p>
                 </div>
+            </article>
             </div>
-            <!-- Спецпредлоджение для бухгалтерии -->
-
         </aside>
+        </div>
     </section>
 
     <footer class="footer-mini">
