@@ -100,6 +100,16 @@
         .header-contact--cases:hover {
             background: #ede9fe;
         }
+        .header-contact--guide {
+            background: #eff6ff;
+            color: #1d4ed8;
+        }
+        .header-contact--guide i {
+            color: #2563eb;
+        }
+        .header-contact--guide:hover {
+            background: #dbeafe;
+        }
         .header-contact--doc {
             background: #fef3c7;
             color: #92400e;
@@ -1292,4 +1302,214 @@
     .workflow-step:not(:last-child)::after {
         display: none;
     }
+}
+
+/* Страница подключения (тонкий клиент) */
+.guide-page .logo {
+    text-decoration: none;
+    color: inherit;
+}
+
+.guide-hero {
+    padding: 48px 0 32px;
+    text-align: center;
+    background: linear-gradient(180deg, #f1f5f9 0%, #ffffff 100%);
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.guide-hero-title {
+    font-size: clamp(1.75rem, 3.5vw, 2.25rem);
+    font-weight: 800;
+    color: #0f172a;
+    margin: 0 0 12px;
+    letter-spacing: -0.02em;
+}
+
+.guide-hero-lead {
+    font-size: 1.1rem;
+    color: #64748b;
+    margin: 0;
+    max-width: 36em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.guide-main {
+    padding: 48px 0 64px;
+}
+
+.guide-block {
+    max-width: 920px;
+    margin: 0 auto 56px;
+}
+
+.guide-block-header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 28px;
+}
+
+.guide-block-num {
+    flex-shrink: 0;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #2563eb, #7c3aed);
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.15rem;
+}
+
+.guide-block-title {
+    font-size: clamp(1.35rem, 2.5vw, 1.65rem);
+    font-weight: 700;
+    color: #0f172a;
+    margin: 0;
+}
+
+.guide-download-card {
+    padding: 28px;
+    margin-bottom: 36px;
+    background: linear-gradient(135deg, #eff6ff 0%, #f5f3ff 100%);
+    border: 1px solid #c7d2fe;
+    border-radius: 18px;
+    text-align: center;
+}
+
+.guide-download-text {
+    font-size: 1.05rem;
+    line-height: 1.55;
+    color: #334155;
+    margin: 0 0 20px;
+    max-width: 40em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.guide-download-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 28px;
+    background: linear-gradient(135deg, #2563eb, #1d4ed8);
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.05rem;
+    text-decoration: none;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(37, 99, 235, 0.35);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.guide-download-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 28px rgba(37, 99, 235, 0.4);
+    color: #fff;
+}
+
+.guide-steps {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.guide-step-title {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #0f172a;
+    margin: 0 0 10px;
+}
+
+.guide-step p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #475569;
+    margin: 0 0 16px;
+}
+
+.guide-figure {
+    margin: 16px 0 0;
+}
+
+.guide-figure img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(15, 23, 42, 0.08);
+}
+
+.guide-note {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 14px 16px;
+    margin-bottom: 16px !important;
+    background: #fffbeb;
+    border: 1px solid #fde68a;
+    border-radius: 12px;
+    color: #92400e !important;
+}
+
+.guide-note i {
+    color: #d97706;
+    margin-top: 3px;
+}
+
+.guide-code {
+    display: inline-block;
+    padding: 10px 16px;
+    margin: 0 0 16px;
+    font-family: ui-monospace, Consolas, monospace;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #1e40af;
+    background: #eff6ff;
+    border: 1px solid #bfdbfe;
+    border-radius: 8px;
+}
+
+.guide-help {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 24px;
+    text-align: center;
+    background: #f8fafc;
+    border-radius: 16px;
+    border: 1px solid #e2e8f0;
+}
+
+.guide-help p {
+    margin: 0;
+    font-size: 1rem;
+    color: #475569;
+}
+
+.guide-help a {
+    color: #1d4ed8;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.guide-help a:hover {
+    text-decoration: underline;
+}
+
+.footer-mini a {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.footer-mini a:hover {
+    text-decoration: underline;
 }
