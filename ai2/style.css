@@ -90,6 +90,16 @@
         .header-contact--pricing:hover {
             background: #d1fae5;
         }
+        .header-contact--cases {
+            background: #f5f3ff;
+            color: #6d28d9;
+        }
+        .header-contact--cases i {
+            color: #7c3aed;
+        }
+        .header-contact--cases:hover {
+            background: #ede9fe;
+        }
         .header-contact--doc {
             background: #fef3c7;
             color: #92400e;
