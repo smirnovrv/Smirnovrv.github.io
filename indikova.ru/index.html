@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кабинет косметолога — Индикова</title>
+    <meta name="description"
+        content="Косметолог Индикова — инъекционная и аппаратная косметология, уходовые программы. Индивидуальный подход и видимый результат.">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Manrope:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="header" id="top">
+        <div class="container header-inner">
+            <a href="#top" class="logo">Индикова</a>
+            <nav class="nav" id="nav" aria-label="Основное меню">
+                <a href="#about">О специалисте</a>
+                <a href="#services">Услуги</a>
+                <a href="#results">Результаты</a>
+                <a href="#reviews">Отзывы</a>
+                <a href="#contacts">Контакты</a>
+            </nav>
+            <a href="#booking" class="btn btn-primary header-cta">Записаться</a>
+            <button type="button" class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false"
+                aria-controls="nav">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container hero-grid">
+            <div class="hero-content">
+                <p class="hero-eyebrow">Кабинет эстетической косметологии</p>
+                <h1 class="hero-title">Косметология<br>с&nbsp;заботой о&nbsp;вашей коже</h1>
+                <p class="hero-lead">Индивидуальные программы ухода, инъекционные и аппаратные методики —
+                    для сияющей кожи и уверенности в себе каждый день.</p>
+                <div class="hero-actions">
+                    <a href="#booking" class="btn btn-primary btn-lg">Записаться на консультацию</a>
+                    <a href="#services" class="btn btn-outline btn-lg">Выбрать процедуру</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-photo-wrap">
+                    <img src="img/hero.jpg" alt="Косметолог Индикова" class="hero-photo" width="520" height="640"
+                        onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="hero-photo-placeholder" aria-hidden="true">
+                        <i class="fas fa-spa"></i>
+                        <span>Фото специалиста<br><small>img/hero.jpg</small></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-text">
+                    <h2 class="section-title">Косметолог<br>Индикова</h2>
+                    <p class="about-role">Врач-косметолог, эстетическая медицина</p>
+                    <p>Прохожу диагностику кожи и подбираю процедуры под ваш запрос: омоложение, коррекция,
+                        восстановление, подготовка к важному событию.</p>
+                    <ul class="about-creds">
+                        <li><i class="fas fa-graduation-cap" aria-hidden="true"></i> Высшее медицинское образование</li>
+                        <li><i class="fas fa-certificate" aria-hidden="true"></i> Сертификаты по инъекционной
+                            косметологии</li>
+                        <li><i class="fas fa-microscope" aria-hidden="true"></i> Аппаратные методики и пилинги</li>
+                        <li><i class="fas fa-heart" aria-hidden="true"></i> Бережный подход и натуральный результат</li>
+                    </ul>
+                    <p class="about-quote">«Красота начинается с правильного ухода и доверия к специалисту»</p>
+                </div>
+                <div class="stats" aria-label="О нас в цифрах">
+                    <div class="stat-card">
+                        <span class="stat-num">10+</span>
+                        <span class="stat-label">лет практики</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-num">3 000+</span>
+                        <span class="stat-label">довольных клиентов</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-num">15+</span>
+                        <span class="stat-label">видов процедур</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-num">9 из 10</span>
+                        <span class="stat-label">рекомендуют подругам</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="benefits">
+        <div class="container">
+            <h2 class="section-title section-title--center">Зачем приходят в кабинет</h2>
+            <div class="benefits-grid">
+                <article class="benefit-card">
+                    <span class="benefit-num">01</span>
+                    <h3>Вернуть сияние и тонус коже</h3>
+                    <p>Уходовые и аппаратные программы для свежего, отдохнувшего вида без «перекачанности».</p>
+                </article>
+                <article class="benefit-card">
+                    <span class="benefit-num">02</span>
+                    <h3>Мягкая коррекция возраста</h3>
+                    <p>Инъекционные методики для разглаживания морщин, восстановления объёма и овала лица.</p>
+                </article>
+                <article class="benefit-card">
+                    <span class="benefit-num">03</span>
+                    <h3>Решить проблемы кожи</h3>
+                    <p>Акне, пигментация, рубцы, купероз — комплексный план лечения и домашний уход.</p>
+                </article>
+                <article class="benefit-card">
+                    <span class="benefit-num">04</span>
+                    <h3>Подготовиться к событию</h3>
+                    <p>Экспресс-программы перед свадьбой, фотосессией или отпуском — с предсказуемым результатом.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="audience">
+        <div class="container audience-inner">
+            <div class="audience-text">
+                <h2 class="section-title">К кому обращаются</h2>
+                <p>В кабинет приходят женщины и мужчины, которые ценят качество, безопасность и внимание к деталям.</p>
+            </div>
+            <ul class="audience-tags" role="list">
+                <li><i class="fas fa-user" aria-hidden="true"></i> С 25 лет — профилактика старения</li>
+                <li><i class="fas fa-briefcase" aria-hidden="true"></i> Деловые женщины 35+</li>
+                <li><i class="fas fa-ring" aria-hidden="true"></i> Невесты и молодожёны</li>
+                <li><i class="fas fa-star" aria-hidden="true"></i> Те, кто пробовал — и ищет «своего» мастера</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <div class="container">
+            <header class="section-head">
+                <h2 class="section-title">Услуги и программы</h2>
+                <p class="section-sub">Подберём процедуру на консультации — с учётом типа кожи, возраста и бюджета</p>
+            </header>
+            <div class="services-grid">
+                <article class="service-card service-card--featured">
+                    <span class="service-badge">Популярное</span>
+                    <div class="service-icon" aria-hidden="true"><i class="fas fa-syringe"></i></div>
+                    <h3 class="service-title">Инъекционная косметология</h3>
+                    <p class="service-desc">Ботулинотерапия, биоревитализация, контурная пластика, мезотерапия.</p>
+                    <p class="service-price">от 4 500 ₽</p>
+                    <a href="#booking" class="service-link">Записаться <i class="fas fa-arrow-right"></i></a>
+                </article>
+                <article class="service-card">
+                    <div class="service-icon" aria-hidden="true"><i class="fas fa-wand-magic-sparkles"></i></div>
+                    <h3 class="service-title">Аппаратная косметология</h3>
+                    <p class="service-desc">RF-лифтинг, микротоки, ультразвук, фотоомоложение.</p>
+                    <p class="service-price">от 3 500 ₽</p>
+                    <a href="#booking" class="service-link">Записаться <i class="fas fa-arrow-right"></i></a>
+                </article>
+                <article class="service-card">
+                    <div class="service-icon" aria-hidden="true"><i class="fas fa-leaf"></i></div>
+                    <h3 class="service-title">Уходовые программы</h3>
+                    <p class="service-desc">Чистка, пилинги, маски, увлажнение и восстановление барьера кожи.</p>
+                    <p class="service-price">от 2 800 ₽</p>
+                    <a href="#booking" class="service-link">Записаться <i class="fas fa-arrow-right"></i></a>
+                </article>
+                <article class="service-card">
+                    <div class="service-icon" aria-hidden="true"><i class="fas fa-gift"></i></div>
+                    <h3 class="service-title">Комплекс «Сияние»</h3>
+                    <p class="service-desc">3 процедуры: диагностика + уход + финальный результат за 2 недели.</p>
+                    <p class="service-price">от 12 000 ₽</p>
+                    <a href="#booking" class="service-link">Записаться <i class="fas fa-arrow-right"></i></a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="results" id="results">
+        <div class="container">
+            <header class="section-head">
+                <h2 class="section-title">Результаты работы</h2>
+                <p class="section-sub">Фото «до / после» — с согласия клиентов</p>
+            </header>
+            <div class="results-grid">
+                <figure class="result-card">
+                    <div class="result-images">
+                        <div class="result-img result-img--before">
+                            <span>До</span>
+                        </div>
+                        <div class="result-img result-img--after">
+                            <span>После</span>
+                        </div>
+                    </div>
+                    <figcaption>Биоревитализация, 3 сеанса — увлажнение и сияние</figcaption>
+                </figure>
+                <figure class="result-card">
+                    <div class="result-images">
+                        <div class="result-img result-img--before">
+                            <span>До</span>
+                        </div>
+                        <div class="result-img result-img--after">
+                            <span>После</span>
+                        </div>
+                    </div>
+                    <figcaption>Курс пилингов — выравнивание тона и текстуры</figcaption>
+                </figure>
+                <figure class="result-card">
+                    <div class="result-images">
+                        <div class="result-img result-img--before">
+                            <span>До</span>
+                        </div>
+                        <div class="result-img result-img--after">
+                            <span>После</span>
+                        </div>
+                    </div>
+                    <figcaption>Коррекция носогубных складок — естественный результат</figcaption>
+                </figure>
+            </div>
+            <p class="results-note">Замените блоки на реальные фото в папке <code>img/results/</code></p>
+        </div>
+    </section>
+
+    <section class="reviews" id="reviews">
+        <div class="container">
+            <h2 class="section-title section-title--center">Отзывы клиентов</h2>
+            <div class="reviews-grid">
+                <blockquote class="review-card">
+                    <p>«Наконец нашла косметолога, который не предлагает лишнего. Всё объяснила, составила план —
+                        кожа стала заметно лучше уже после первого курса.»</p>
+                    <footer>
+                        <strong>Елена, 38 лет</strong>
+                        <span>Биоревитализация + уход</span>
+                    </footer>
+                </blockquote>
+                <blockquote class="review-card">
+                    <p>«Ходила перед свадьбой — результат на фото идеальный, без отёков. Спокойная атмосфера,
+                        всё стерильно, чувствуешь себя в надёжных руках.»</p>
+                    <footer>
+                        <strong>Анастасия, 31 год</strong>
+                        <span>Комплекс «Сияние»</span>
+                    </footer>
+                </blockquote>
+                <blockquote class="review-card">
+                    <p>«Долго боролась с акне — за три месяца кожа очистилась, подобрали домашний уход.
+                        Рекомендую всем подругам.»</p>
+                    <footer>
+                        <strong>Мария, 27 лет</strong>
+                        <span>Лечение акне</span>
+                    </footer>
+                </blockquote>
+            </div>
+        </div>
+    </section>
+
+    <section class="method">
+        <div class="container method-inner">
+            <h2 class="section-title section-title--center">Как проходит работа</h2>
+            <ol class="method-steps">
+                <li>
+                    <span class="method-step-num">1</span>
+                    <h3>Консультация</h3>
+                    <p>Осмотр, диагностика кожи, обсуждение ожиданий и противопоказаний.</p>
+                </li>
+                <li>
+                    <span class="method-step-num">2</span>
+                    <h3>План процедур</h3>
+                    <p>Составляем программу с прозрачной стоимостью и сроками.</p>
+                </li>
+                <li>
+                    <span class="method-step-num">3</span>
+                    <h3>Процедуры</h3>
+                    <p>Работаем по протоколам, используем сертифицированные препараты.</p>
+                </li>
+                <li>
+                    <span class="method-step-num">4</span>
+                    <h3>Сопровождение</h3>
+                    <p>Рекомендации по домашнему уходу и контрольный осмотр.</p>
+                </li>
+            </ol>
+        </div>
+    </section>
+
+    <section class="booking" id="booking">
+        <div class="container booking-grid">
+            <div class="booking-text">
+                <h2 class="section-title">Запишитесь на консультацию</h2>
+                <p>Оставьте заявку — перезвоним в течение часа в рабочее время и подберём удобное время.</p>
+                <ul class="booking-contacts" id="contacts">
+                    <li>
+                        <i class="fas fa-phone" aria-hidden="true"></i>
+                        <a href="tel:+79000000000">+7 (900) 000-00-00</a>
+                    </li>
+                    <li>
+                        <i class="fab fa-telegram" aria-hidden="true"></i>
+                        <a href="https://t.me/" target="_blank" rel="noopener noreferrer">Telegram</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                        <span>г. Екатеринбург, ул. Примерная, 1</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-clock" aria-hidden="true"></i>
+                        <span>Пн–Сб: 10:00 – 20:00</span>
+                    </li>
+                </ul>
+            </div>
+            <form class="booking-form" id="booking-form" action="#" method="post">
+                <p class="form-lead">Отправьте заявку — мы перезвоним вам</p>
+                <label class="form-field">
+                    <span class="sr-only">Имя</span>
+                    <input type="text" name="name" placeholder="Имя" required autocomplete="name">
+                </label>
+                <label class="form-field">
+                    <span class="sr-only">Телефон</span>
+                    <input type="tel" name="phone" placeholder="Телефон" required autocomplete="tel">
+                </label>
+                <label class="form-field">
+                    <span class="sr-only">E-mail</span>
+                    <input type="email" name="email" placeholder="E-mail" autocomplete="email">
+                </label>
+                <label class="form-checkbox">
+                    <input type="checkbox" name="consent" required>
+                    <span>Согласен(-на) на обработку персональных данных</span>
+                </label>
+                <button type="submit" class="btn btn-primary btn-lg btn-block">Отправить заявку</button>
+                <p class="form-note" id="form-status" role="status" aria-live="polite"></p>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer-inner">
+            <div class="footer-brand">
+                <span class="logo">Индикова</span>
+                <p>Кабинет эстетической косметологии</p>
+            </div>
+            <div class="footer-links">
+                <a href="#about">О специалисте</a>
+                <a href="#services">Услуги</a>
+                <a href="#booking">Записаться</a>
+            </div>
+            <p class="footer-copy">© 2025 Индикова. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
