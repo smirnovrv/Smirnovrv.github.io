@@ -244,6 +244,27 @@ a {
     gap: 14px;
 }
 
+.hero-tags {
+    list-style: none;
+    margin: 28px 0 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.hero-tags li {
+    padding: 6px 14px;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--wine);
+    background: rgba(143, 48, 64, 0.08);
+    border: 1px solid rgba(143, 48, 64, 0.15);
+}
+
 .hero-photo-wrap {
     position: relative;
     border-radius: 24px;
@@ -594,6 +615,103 @@ a {
 
 .service-link:hover {
     gap: 12px;
+}
+
+/* Pricing */
+.pricing {
+    padding: 88px 0;
+    background: var(--cream);
+}
+
+.pricing-pdf-link {
+    color: var(--wine);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.pricing-pdf-link:hover {
+    text-decoration: underline;
+}
+
+.pricing-note {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    max-width: 720px;
+    margin: 0 auto 36px;
+    padding: 14px 18px;
+    background: var(--white);
+    border-radius: 12px;
+    border: 1px solid var(--cream-dark);
+    font-size: 0.92rem;
+    color: var(--text-muted);
+}
+
+.pricing-note i {
+    color: var(--wine);
+    margin-top: 2px;
+}
+
+.pricing-groups {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.pricing-group {
+    background: var(--white);
+    border: 1px solid var(--cream-dark);
+    border-radius: var(--radius);
+    padding: 22px 20px;
+    box-shadow: 0 4px 20px rgba(45, 36, 36, 0.04);
+}
+
+.pricing-group-title {
+    font-family: var(--font-serif);
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--wine);
+    margin: 0 0 14px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--cream-dark);
+}
+
+.pricing-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.pricing-table td {
+    padding: 10px 0;
+    vertical-align: top;
+    font-size: 0.92rem;
+    line-height: 1.45;
+    border-bottom: 1px solid #f3eeea;
+}
+
+.pricing-table tr:last-child td {
+    border-bottom: none;
+}
+
+.pricing-table td:first-child {
+    color: var(--text);
+    padding-right: 16px;
+}
+
+.pricing-table td:last-child {
+    text-align: right;
+    white-space: nowrap;
+    font-weight: 700;
+    color: var(--wine);
+}
+
+.pricing-table small {
+    display: block;
+    margin-top: 4px;
+    font-size: 0.82rem;
+    font-weight: 400;
+    color: var(--text-muted);
+    line-height: 1.4;
 }
 
 /* Results */
@@ -986,7 +1104,8 @@ a {
     }
 
     .reviews-grid,
-    .results-grid {
+    .results-grid,
+    .pricing-groups {
         grid-template-columns: 1fr;
     }
 
