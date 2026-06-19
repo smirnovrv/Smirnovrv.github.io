@@ -229,9 +229,21 @@ footer a:hover {
     color: #2563eb;
 }
 
+.product-audience {
+    margin: 0 0 0.5rem;
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: #b45309;
+}
+
 .menu-icon--amber {
     background: #fef3c7;
     color: #b45309;
+}
+
+.menu-icon--green {
+    background: #ecfdf5;
+    color: #059669;
 }
 
 .menu-text {
