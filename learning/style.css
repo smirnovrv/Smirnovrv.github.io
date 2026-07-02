@@ -246,6 +246,109 @@ footer a:hover {
     color: #059669;
 }
 
+.menu-icon--violet {
+    background: #f5f3ff;
+    color: #7c3aed;
+}
+
+.layers {
+    list-style: none;
+    margin: 0 0 2.5rem;
+    padding: 0;
+    display: grid;
+    gap: 1rem;
+    counter-reset: layer;
+}
+
+.layer {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+    background: #fff;
+    border: 1px solid rgba(148, 163, 184, 0.2);
+    border-radius: 0.875rem;
+    padding: 1.25rem 1.5rem;
+    box-shadow: 0 2px 12px rgba(15, 23, 42, 0.04);
+}
+
+.layer-num {
+    flex-shrink: 0;
+    width: 2.25rem;
+    height: 2.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #7c3aed 0%, #8b5cf6 100%);
+    color: #fff;
+    font-size: 0.95rem;
+    font-weight: 700;
+}
+
+.layer-content h2 {
+    margin: 0 0 0.5rem;
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #0f172a;
+}
+
+.layer-tag {
+    display: inline-block;
+    margin-left: 0.35rem;
+    padding: 0.1rem 0.5rem;
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: #7c3aed;
+    background: #f5f3ff;
+    border-radius: 999px;
+    vertical-align: middle;
+}
+
+.layer-content p {
+    margin: 0;
+    font-size: 0.95rem;
+    color: #475569;
+}
+
+.schema-section {
+    margin-bottom: 2.5rem;
+}
+
+.schema-title {
+    margin: 0 0 0.35rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #0f172a;
+    text-align: center;
+}
+
+.schema-desc {
+    margin: 0 0 1.25rem;
+    font-size: 0.95rem;
+    color: #64748b;
+    text-align: center;
+}
+
+.schema-figure {
+    margin: 0 0 1.5rem;
+    padding: 0;
+    background: #fff;
+    border: 1px solid rgba(148, 163, 184, 0.2);
+    border-radius: 0.875rem;
+    overflow: hidden;
+    box-shadow: 0 2px 12px rgba(15, 23, 42, 0.04);
+}
+
+.schema-figure img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.summary--violet {
+    background: linear-gradient(135deg, #6d28d9 0%, #7c3aed 100%);
+}
+
 .menu-text {
     flex: 1;
     min-width: 0;
@@ -280,6 +383,11 @@ footer a:hover {
 
 @media (max-width: 480px) {
     .benefit {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+
+    .layer {
         flex-direction: column;
         gap: 0.75rem;
     }
