@@ -31,9 +31,102 @@
         <header>
             <h1>Хозяйственные операции</h1>
             <p>Деятельность (хозяйственно-экономическая) предпринимателя или организации осуществляется путём
-                взаимодействий между участниками. 
-                <Br>Такие действия называются <strong>хозяйственными операциями</strong> — вот основные.</p>
+                взаимодействий между участниками.
+                <br>Такие действия называются <strong>хозяйственными операциями</strong> — вот основные.</p>
         </header>
+
+        <section class="econ-schema" aria-labelledby="econ-schema-title">
+            <h2 id="econ-schema-title" class="schema-title">Схема: участники и виды взаимодействий</h2>
+            <p class="schema-desc">Участники совершают операции в экономико-хозяйственной деятельности. Между ними
+                проходят три вида взаимодействий — у каждого вида есть свои места хранения.</p>
+
+            <div class="econ-diagram" role="img"
+                aria-label="Схема: участники, виды взаимодействий ТМЦ, ДС, ТР и места хранения">
+                <div class="econ-row econ-row--participants">
+                    <div class="econ-node econ-node--participant">
+                        <i class="fas fa-user-tie" aria-hidden="true"></i>
+                        <span>Участник</span>
+                    </div>
+                    <div class="econ-between" aria-hidden="true">
+                        <span class="econ-between-line"></span>
+                        <span class="econ-between-label">взаимодействия</span>
+                        <span class="econ-between-line"></span>
+                    </div>
+                    <div class="econ-node econ-node--participant">
+                        <i class="fas fa-building" aria-hidden="true"></i>
+                        <span>Участник</span>
+                    </div>
+                </div>
+
+                <p class="econ-caption">Совершают хозяйственные операции в <strong>экономико-хозяйственной
+                        деятельности</strong></p>
+
+                <div class="econ-arrow-down" aria-hidden="true"><i class="fas fa-arrow-down"></i></div>
+
+                <p class="econ-subtitle">3 основных вида взаимодействий</p>
+                <div class="econ-row econ-row--types">
+                    <div class="econ-node econ-node--type econ-node--tmc" data-type="tmc">
+                        <span class="econ-abbr">ТМЦ</span>
+                        <span class="econ-full">Товарно-материальные ценности</span>
+                    </div>
+                    <div class="econ-node econ-node--type econ-node--ds" data-type="ds">
+                        <span class="econ-abbr">ДС</span>
+                        <span class="econ-full">Денежные средства</span>
+                    </div>
+                    <div class="econ-node econ-node--type econ-node--tr" data-type="tr">
+                        <span class="econ-abbr">ТР</span>
+                        <span class="econ-full">Трудовые ресурсы</span>
+                    </div>
+                </div>
+
+                <div class="econ-links" aria-hidden="true">
+                    <span class="econ-link econ-link--tmc"></span>
+                    <span class="econ-link econ-link--ds"></span>
+                </div>
+
+                <p class="econ-subtitle">Места хранения</p>
+                <div class="econ-row econ-row--storage">
+                    <div class="econ-pair" data-pair="tmc">
+                        <div class="econ-node econ-node--storage">
+                            <i class="fas fa-warehouse" aria-hidden="true"></i>
+                            <span>Склады</span>
+                        </div>
+                        <span class="econ-pair-label">для ТМЦ</span>
+                    </div>
+                    <div class="econ-pair" data-pair="ds">
+                        <div class="econ-node econ-node--storage">
+                            <i class="fas fa-wallet" aria-hidden="true"></i>
+                            <span>РС и Кассы</span>
+                        </div>
+                        <span class="econ-pair-label">для ДС</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="econ-quiz" id="econ-quiz" aria-labelledby="econ-quiz-title">
+                <h3 id="econ-quiz-title" class="econ-quiz-title"><i class="fas fa-circle-question" aria-hidden="true"></i>
+                    Проверь себя</h3>
+                <p class="econ-quiz-hint">Сопоставьте вид взаимодействия с местом хранения. Нажмите пару карточек.</p>
+
+                <div class="econ-quiz-board">
+                    <div class="econ-quiz-col">
+                        <p class="econ-quiz-col-title">Виды взаимодействий</p>
+                        <button type="button" class="econ-quiz-card" data-quiz="type" data-id="tmc">ТМЦ</button>
+                        <button type="button" class="econ-quiz-card" data-quiz="type" data-id="ds">ДС</button>
+                        <button type="button" class="econ-quiz-card" data-quiz="type" data-id="tr">ТР</button>
+                    </div>
+                    <div class="econ-quiz-col">
+                        <p class="econ-quiz-col-title">Места хранения</p>
+                        <button type="button" class="econ-quiz-card" data-quiz="storage" data-id="warehouse">Склады</button>
+                        <button type="button" class="econ-quiz-card" data-quiz="storage" data-id="rs">РС и Кассы</button>
+                        <button type="button" class="econ-quiz-card" data-quiz="storage" data-id="none">Нет отдельного хранилища</button>
+                    </div>
+                </div>
+
+                <p class="econ-quiz-status" id="econ-quiz-status" aria-live="polite">Выберите вид взаимодействия, затем место хранения.</p>
+                <button type="button" class="econ-quiz-reset" id="econ-quiz-reset" hidden>Сбросить</button>
+            </div>
+        </section>
 
         <section class="schema-section" aria-labelledby="operations-title">
             <h2 id="operations-title" class="schema-title">Таблица хозяйственных операций</h2>
@@ -56,6 +149,97 @@
             <p>Учебный материал · <a href="index.html">Меню</a></p>
         </footer>
     </main>
+    <script>
+        (function () {
+            var pairs = { tmc: 'warehouse', ds: 'rs', tr: 'none' };
+            var selectedType = null;
+            var matched = {};
+            var cards = document.querySelectorAll('.econ-quiz-card');
+            var statusEl = document.getElementById('econ-quiz-status');
+            var resetBtn = document.getElementById('econ-quiz-reset');
+
+            function updateStatus() {
+                var total = Object.keys(pairs).length;
+                var done = Object.keys(matched).length;
+                if (done === total) {
+                    statusEl.textContent = 'Отлично! Все пары сопоставлены верно.';
+                    statusEl.className = 'econ-quiz-status econ-quiz-status--success';
+                    resetBtn.hidden = false;
+                    return;
+                }
+                statusEl.className = 'econ-quiz-status';
+                statusEl.textContent = 'Сопоставлено ' + done + ' из ' + total + '. Выберите вид взаимодействия, затем место хранения.';
+            }
+
+            function clearSelection() {
+                selectedType = null;
+                cards.forEach(function (card) {
+                    if (!card.classList.contains('econ-quiz-card--matched')) {
+                        card.classList.remove('econ-quiz-card--selected');
+                    }
+                });
+            }
+
+            function markMatched(typeId, storageId) {
+                matched[typeId] = storageId;
+                cards.forEach(function (card) {
+                    if (card.dataset.id === typeId || card.dataset.id === storageId) {
+                        card.classList.add('econ-quiz-card--matched');
+                        card.classList.remove('econ-quiz-card--selected', 'econ-quiz-card--wrong');
+                        card.disabled = true;
+                    }
+                });
+            }
+
+            cards.forEach(function (card) {
+                card.addEventListener('click', function () {
+                    if (card.classList.contains('econ-quiz-card--matched')) return;
+
+                    var kind = card.dataset.quiz;
+                    var id = card.dataset.id;
+
+                    if (kind === 'type') {
+                        clearSelection();
+                        selectedType = id;
+                        card.classList.add('econ-quiz-card--selected');
+                        statusEl.className = 'econ-quiz-status';
+                        statusEl.textContent = 'Теперь выберите место хранения для «' + card.textContent.trim() + '».';
+                        return;
+                    }
+
+                    if (!selectedType) {
+                        statusEl.className = 'econ-quiz-status econ-quiz-status--warn';
+                        statusEl.textContent = 'Сначала выберите вид взаимодействия слева.';
+                        return;
+                    }
+
+                    if (pairs[selectedType] === id) {
+                        markMatched(selectedType, id);
+                        selectedType = null;
+                        updateStatus();
+                    } else {
+                        card.classList.add('econ-quiz-card--wrong');
+                        statusEl.className = 'econ-quiz-status econ-quiz-status--error';
+                        statusEl.textContent = 'Не совпало. Попробуйте другое место хранения.';
+                        setTimeout(function () {
+                            card.classList.remove('econ-quiz-card--wrong');
+                        }, 700);
+                    }
+                });
+            });
+
+            resetBtn.addEventListener('click', function () {
+                matched = {};
+                selectedType = null;
+                resetBtn.hidden = true;
+                cards.forEach(function (card) {
+                    card.disabled = false;
+                    card.className = 'econ-quiz-card';
+                });
+                updateStatus();
+            });
+        })();
+    </script>
 </body>
 
 </html>
