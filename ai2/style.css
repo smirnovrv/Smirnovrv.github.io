@@ -781,12 +781,6 @@
             font-size: 1.15em;
             color: #1d4ed8;
         }
-        .hero-offer-price-note {
-            font-size: clamp(0.8rem, 1.2vw, 0.88rem);
-            line-height: 1.45;
-            color: #64748b;
-            margin: -6px 0 14px;
-        }
         .hero-offer--1 .hero-offer-price strong {
             color: #6d28d9;
         }
