@@ -358,6 +358,47 @@ footer a:hover {
     color: #0d9488;
 }
 
+.menu-icon--orange {
+    background: #fff7ed;
+    color: #ea580c;
+}
+
+.menu-section-title {
+    margin: 2.25rem 0 1rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #0f172a;
+}
+
+.page-eyebrow {
+    margin: 0 0 0.5rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    color: #ea580c;
+}
+
+.guide-steps {
+    list-style: none;
+    margin: 0 0 2rem;
+    padding: 0;
+    display: grid;
+    gap: 2rem;
+}
+
+.guide-step h2 {
+    margin: 0 0 0.5rem;
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: #0f172a;
+}
+
+.guide-step p {
+    margin: 0 0 1rem;
+    font-size: 0.95rem;
+    color: #475569;
+}
+
 .menu-text {
     flex: 1;
     min-width: 0;
