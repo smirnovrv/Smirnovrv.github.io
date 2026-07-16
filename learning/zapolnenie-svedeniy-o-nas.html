@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Заполнение сведений о НАС — 1С: Бухгалтерия 3</title>
+    <meta name="description"
+        content="Обязательные реквизиты справочника «Организации» в 1С:Бухгалтерия 3: тип лица, наименования, ФИО для ИП и головная организация.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="container">
+        <nav class="page-nav" aria-label="Учебные материалы">
+            <a href="index.html"><i class="fas fa-list" aria-hidden="true"></i> Меню</a>
+            <a href="1c-programmy.html"><i class="fas fa-th-large" aria-hidden="true"></i> Программы 1С</a>
+            <a href="1c.html"><i class="fas fa-cube" aria-hidden="true"></i> 1С</a>
+            <a href="uchet-programma.html"><i class="fas fa-book" aria-hidden="true"></i> Учётная программа</a>
+            <a href="hozyaistvennye-operacii.html"><i class="fas fa-right-left" aria-hidden="true"></i> Операции</a>
+            <a href="predmetnaya-oblast.html"><i class="fas fa-sitemap" aria-hidden="true"></i> Предметная область</a>
+            <a href="zapolnenie-svedeniy-o-nas.html" class="page-nav-current" aria-current="page"><i
+                    class="fas fa-building" aria-hidden="true"></i> Сведения о НАС</a>
+        </nav>
+
+        <header>
+            <p class="page-eyebrow">1С: Бухгалтерия 3</p>
+            <h1>Заполнение сведений о НАС</h1>
+            <p>Справочник «Организации» — это сведения о вашей компании (или ИП). Ниже — обязательные реквизиты
+                формы: на каждом шаге выделено поле, которое нужно заполнить.</p>
+        </header>
+
+        <section class="intro" aria-label="Введение">
+            <p>Путь в программе: <strong>Справочники → Организации</strong> → создать или открыть карточку.
+                Обязательность части полей зависит от типа: юрлицо, ИП или обособленное подразделение.</p>
+        </section>
+
+        <ol class="guide-steps" aria-label="Обязательные реквизиты">
+            <li class="guide-step">
+                <h2>1. Юридическое / физическое лицо</h2>
+                <p>Всегда обязателен. Выберите тип: юридическое лицо или физическое лицо (ИП).</p>
+                <figure class="schema-figure">
+                    <img src="images/org-01-yur-fiz-lico.png"
+                        alt="Форма Организации: обязательный реквизит Юридическое / физическое лицо"
+                        loading="lazy" width="1280" height="720">
+                </figure>
+            </li>
+
+            <li class="guide-step">
+                <h2>2. Сокращённое наименование</h2>
+                <p>Обязателен для <strong>юридического лица</strong>. Пример: ООО «Ромашка».</p>
+                <figure class="schema-figure">
+                    <img src="images/org-02-sokrashennoe-naimenovanie.png"
+                        alt="Форма Организации: обязательный реквизит Сокращённое наименование"
+                        loading="lazy" width="1280" height="720">
+                </figure>
+            </li>
+
+            <li class="guide-step">
+                <h2>3. Наименование в программе</h2>
+                <p>Как организация отображается в списках и документах. Часто заполняется автоматически
+                    по сокращённому наименованию, но поле обязательное.</p>
+                <figure class="schema-figure">
+                    <img src="images/org-03-naimenovanie-v-programme.png"
+                        alt="Форма Организации: обязательный реквизит Наименование в программе"
+                        loading="lazy" width="1280" height="720">
+                </figure>
+            </li>
+
+            <li class="guide-step">
+                <h2>4. Фамилия (для ИП)</h2>
+                <p>Обязательна, если выбран тип <strong>физическое лицо</strong>.</p>
+                <figure class="schema-figure">
+                    <img src="images/org-04-familiya-ip.png"
+                        alt="Форма Организации: обязательный реквизит Фамилия для ИП"
+                        loading="lazy" width="1280" height="720">
+                </figure>
+            </li>
+
+            <li class="guide-step">
+                <h2>5. Имя (для ИП)</h2>
+                <p>Обязательно вместе с фамилией для ИП / физического лица.</p>
+                <figure class="schema-figure">
+                    <img src="images/org-05-imya-ip.png"
+                        alt="Форма Организации: обязательный реквизит Имя для ИП"
+                        loading="lazy" width="1280" height="720">
+                </figure>
+            </li>
+
+            <li class="guide-step">
+                <h2>6. Головная организация</h2>
+                <p>Обязательна, если это <strong>обособленное подразделение</strong> (филиал).
+                    Укажите головную организацию, к которой относится филиал.</p>
+                <figure class="schema-figure">
+                    <img src="images/org-06-golovnaya-organizaciya.png"
+                        alt="Форма Организации: обязательный реквизит Головная организация"
+                        loading="lazy" width="1280" height="720">
+                </figure>
+            </li>
+        </ol>
+
+        <section class="summary summary--1c" aria-label="Кратко">
+            <h2>Кратко</h2>
+            <p>Юрлицо: тип + сокращённое наименование (+ наименование в программе).
+                ИП: тип + фамилия + имя. Филиал: дополнительно головная организация.</p>
+        </section>
+
+        <footer>
+            <p>Учебный материал · <a href="index.html">Меню</a></p>
+        </footer>
+    </main>
+</body>
+
+</html>
