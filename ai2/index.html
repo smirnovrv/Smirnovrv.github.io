@@ -32,6 +32,9 @@
                 <a href="dogovor.pdf" class="header-contact header-contact--doc" download="Договор.pdf">
                     <i class="fas fa-file-download" aria-hidden="true"></i> Договор
                 </a>
+                <a href="#compare" class="header-contact header-contact--compare">
+                    <i class="fas fa-balance-scale" aria-hidden="true"></i> Сравнение
+                </a>
                 <a href="#pricing" class="header-contact header-contact--pricing">
                     <i class="fas fa-calculator" aria-hidden="true"></i> Расчёт стоимости
                 </a>
@@ -128,6 +131,99 @@
                             d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15l-5-5 1.41-1.41L11 14.17l7.59-7.59L20 8l-9 9z" />
                     </svg>
                     Написать в MAX
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="compare" id="compare" aria-labelledby="compare-title">
+        <div class="container">
+            <h2 class="compare-title" id="compare-title">Сравнение покупки и аренды 1С</h2>
+            <p class="compare-lead">Своя инфраструктура требует сервер, лицензии, настройку и администратора.
+                В аренде это уже включено — на старте вы платите ноль.</p>
+
+            <div class="compare-table-wrap">
+                <table class="compare-table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Статья расходов</th>
+                            <th scope="col">Покупка 1С</th>
+                            <th scope="col">Аренда 1С</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="compare-group">
+                            <th scope="colgroup" colspan="3">Единовременно</th>
+                        </tr>
+                        <tr>
+                            <td>Сервер начального уровня</td>
+                            <td>150&nbsp;000</td>
+                            <td class="compare-zero">0</td>
+                        </tr>
+                        <tr>
+                            <td>Лицензия Windows Server 2025 Standard</td>
+                            <td>114&nbsp;000</td>
+                            <td class="compare-zero">0</td>
+                        </tr>
+                        <tr>
+                            <td>1С:Бухгалтерия 8 ПРОФ</td>
+                            <td>23&nbsp;000</td>
+                            <td class="compare-zero">0</td>
+                        </tr>
+                        <tr>
+                            <td>Первоначальная настройка сервера</td>
+                            <td>30&nbsp;000</td>
+                            <td class="compare-zero">0</td>
+                        </tr>
+                        <tr class="compare-total">
+                            <th scope="row">ИТОГО единоразово</th>
+                            <td>317&nbsp;000</td>
+                            <td class="compare-zero">0</td>
+                        </tr>
+                        <tr class="compare-group">
+                            <th scope="colgroup" colspan="3">Каждый месяц</th>
+                        </tr>
+                        <tr>
+                            <td>Обновление 1С (ИТС ПРОФ)</td>
+                            <td>5&nbsp;700</td>
+                            <td class="compare-zero">0</td>
+                        </tr>
+                        <tr>
+                            <td>Услуги системного администратора</td>
+                            <td>15&nbsp;000</td>
+                            <td class="compare-zero">0</td>
+                        </tr>
+                        <tr class="compare-total compare-total--month">
+                            <th scope="row">ИТОГО ежемесячно</th>
+                            <td>20&nbsp;700</td>
+                            <td class="compare-rent">1&nbsp;500</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p class="compare-footnote">Ориентир на август 2026, один пользователь. 1С:Бухгалтерия 8 ПРОФ и ИТС ПРОФ — официальный прайс фирмы «1С» (ИТС 68&nbsp;400&nbsp;₽ за первый год). Сервер — начальный уровень от 150&nbsp;000&nbsp;₽. Windows Server 2025 Standard OEM, 16 ядер. Настройка и сисадмин — типичные ставки рынка. Точная смета зависит от конфигурации.</p>
+
+            <div class="compare-summary">
+                <div class="compare-summary-card compare-summary-card--buy">
+                    <span class="compare-summary-label">Покупка · первый год</span>
+                    <strong class="compare-summary-value">565&nbsp;400&nbsp;₽</strong>
+                    <span class="compare-summary-note">317&nbsp;000&nbsp;₽ сразу + 20&nbsp;700&nbsp;₽ × 12 мес.</span>
+                </div>
+                <div class="compare-summary-card compare-summary-card--rent">
+                    <span class="compare-summary-label">Аренда · первый год</span>
+                    <strong class="compare-summary-value">18&nbsp;000&nbsp;₽</strong>
+                    <span class="compare-summary-note">1&nbsp;500&nbsp;₽ × 12 месяцев, старт без вложений</span>
+                </div>
+            </div>
+            <p class="compare-saving">Экономия на старте <strong>317&nbsp;000&nbsp;₽</strong> — за первый год аренда
+                обходится примерно в <strong>31 раз дешевле</strong>.</p>
+            <div class="compare-actions">
+                <a href="#pricing" class="compare-cta">
+                    Рассчитать стоимость <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                </a>
+                <a href="https://t.me/RV_Smirnov" class="compare-cta compare-cta--ghost" target="_blank"
+                    rel="noopener noreferrer">
+                    <i class="fab fa-telegram" aria-hidden="true"></i> Написать в Telegram
                 </a>
             </div>
         </div>
@@ -457,7 +553,8 @@
                             каждое рабочее место), сервер (от 50 000₽) или мощный ПК, зарплата сисадмина (от 15
                             000₽/мес) и подписка на обновления ИТС (около 30 000₽/год).</p>
                         <p>В аренде: фиксированный платеж, включены обновления, бэкапы и техподдержка. За 3 года аренда
-                            часто <strong>обходится дешевле</strong>, плюс не нужно платить сразу крупную сумму.</p>
+                            часто <strong>обходится дешевле</strong>, плюс не нужно платить сразу крупную сумму.
+                            Подробный разбор цифр — в <a href="#compare">сравнении покупки и аренды</a>.</p>
                     </div>
                     <div class="answer-avatar"><i class="fas fa-headset"></i></div>
                 </div>
