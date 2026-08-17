@@ -628,6 +628,181 @@
             }
         }
 
+        /* Из чего состоит аренда 1С */
+        .rent-anatomy {
+            padding: 56px 0 64px;
+            background: linear-gradient(180deg, #0f172a 0%, #1e1b4b 100%);
+            color: #e2e8f0;
+            scroll-margin-top: 88px;
+        }
+        .rent-anatomy-header {
+            max-width: 720px;
+            margin: 0 auto 40px;
+            text-align: center;
+        }
+        .rent-anatomy-kicker {
+            margin: 0 0 10px;
+            font-size: 13px;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: #93c5fd;
+        }
+        .rent-anatomy-title {
+            margin: 0 0 14px;
+            font-size: clamp(1.6rem, 3vw, 2.2rem);
+            font-weight: 800;
+            letter-spacing: -0.03em;
+            color: #fff;
+        }
+        .rent-anatomy-lead {
+            margin: 0;
+            font-size: 1.05rem;
+            line-height: 1.6;
+            color: #cbd5e1;
+        }
+        .rent-anatomy-grid {
+            display: grid;
+            grid-template-columns: 1.15fr 1fr 1fr;
+            gap: 20px;
+            max-width: 1120px;
+            margin: 0 auto 28px;
+            align-items: stretch;
+        }
+        .rent-anatomy-card {
+            position: relative;
+            padding: 28px 24px 24px;
+            border-radius: 20px;
+            background: rgba(255, 255, 255, 0.06);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+        }
+        .rent-anatomy-card--hardware {
+            background: rgba(37, 99, 235, 0.22);
+            border-color: rgba(147, 197, 253, 0.35);
+        }
+        .rent-anatomy-num {
+            position: absolute;
+            top: 18px;
+            right: 20px;
+            font-size: 13px;
+            font-weight: 800;
+            letter-spacing: 0.08em;
+            color: rgba(255, 255, 255, 0.35);
+        }
+        .rent-anatomy-icon {
+            width: 44px;
+            height: 44px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 16px;
+            border-radius: 12px;
+            background: #2563eb;
+            color: #fff;
+            font-size: 1.1rem;
+        }
+        .rent-anatomy-card-title {
+            margin: 0 0 10px;
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: #fff;
+        }
+        .rent-anatomy-card-text {
+            margin: 0 0 16px;
+            font-size: 15px;
+            line-height: 1.5;
+            color: #cbd5e1;
+        }
+        .rent-anatomy-list,
+        .rent-anatomy-specs {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        .rent-anatomy-list li {
+            font-size: 14px;
+            line-height: 1.45;
+            color: #e2e8f0;
+        }
+        .rent-anatomy-list strong {
+            color: #fff;
+        }
+        .rent-anatomy-specs li {
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+            padding: 12px 14px;
+            border-radius: 12px;
+            background: rgba(15, 23, 42, 0.35);
+        }
+        .rent-anatomy-specs strong {
+            font-size: 1.15rem;
+            color: #bfdbfe;
+        }
+        .rent-anatomy-specs span {
+            font-size: 13px;
+            color: #cbd5e1;
+        }
+        .rent-anatomy-extras {
+            max-width: 1120px;
+            margin: 0 auto 24px;
+            padding: 24px 28px;
+            border-radius: 20px;
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px dashed rgba(255, 255, 255, 0.18);
+        }
+        .rent-anatomy-extras-title {
+            margin: 0 0 6px;
+            font-size: 1.05rem;
+            font-weight: 700;
+            color: #fff;
+        }
+        .rent-anatomy-extras-lead {
+            margin: 0 0 18px;
+            font-size: 14px;
+            color: #94a3b8;
+        }
+        .rent-anatomy-extras-list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 16px;
+        }
+        .rent-anatomy-extras-list li {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            font-size: 14px;
+            line-height: 1.45;
+            color: #cbd5e1;
+        }
+        .rent-anatomy-extras-name {
+            font-weight: 700;
+            color: #fde68a;
+        }
+        .rent-anatomy-note {
+            max-width: 720px;
+            margin: 0 auto;
+            text-align: center;
+            font-size: 15px;
+            line-height: 1.55;
+            color: #cbd5e1;
+        }
+        .rent-anatomy-note strong {
+            color: #fff;
+        }
+        @media (max-width: 960px) {
+            .rent-anatomy-grid,
+            .rent-anatomy-extras-list {
+                grid-template-columns: 1fr;
+            }
+        }
+
         /* Сервисы 1С (после блока аренды) — карточки с градиентными иконками */
         .onec-services {
             padding: 48px 0 56px;
