@@ -628,7 +628,7 @@
             }
         }
 
-        /* Из чего состоит аренда 1С */
+        /* Инфографика: из чего состоит аренда 1С */
         .rent-anatomy {
             padding: 56px 0 64px;
             background: linear-gradient(180deg, #0f172a 0%, #1e1b4b 100%);
@@ -637,7 +637,7 @@
         }
         .rent-anatomy-header {
             max-width: 720px;
-            margin: 0 auto 40px;
+            margin: 0 auto 32px;
             text-align: center;
         }
         .rent-anatomy-kicker {
@@ -649,123 +649,187 @@
             color: #93c5fd;
         }
         .rent-anatomy-title {
-            margin: 0 0 14px;
+            margin: 0;
             font-size: clamp(1.6rem, 3vw, 2.2rem);
             font-weight: 800;
             letter-spacing: -0.03em;
             color: #fff;
         }
-        .rent-anatomy-lead {
-            margin: 0;
-            font-size: 1.05rem;
-            line-height: 1.6;
-            color: #cbd5e1;
-        }
-        .rent-anatomy-grid {
-            display: grid;
-            grid-template-columns: 1.15fr 1fr 1fr;
-            gap: 20px;
+        .ig-formula {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            gap: 12px 14px;
             max-width: 1120px;
-            margin: 0 auto 28px;
-            align-items: stretch;
+            margin: 0 auto 36px;
         }
-        .rent-anatomy-card {
-            position: relative;
-            padding: 28px 24px 24px;
-            border-radius: 20px;
+        .ig-formula-item,
+        .ig-formula-result {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 8px;
+            min-width: 110px;
+            padding: 16px 18px;
+            border-radius: 18px;
             background: rgba(255, 255, 255, 0.06);
             border: 1px solid rgba(255, 255, 255, 0.12);
+            font-size: 14px;
+            font-weight: 700;
+            color: #fff;
+            text-align: center;
         }
-        .rent-anatomy-card--hardware {
-            background: rgba(37, 99, 235, 0.22);
-            border-color: rgba(147, 197, 253, 0.35);
-        }
-        .rent-anatomy-num {
-            position: absolute;
-            top: 18px;
-            right: 20px;
-            font-size: 13px;
-            font-weight: 800;
-            letter-spacing: 0.08em;
-            color: rgba(255, 255, 255, 0.35);
-        }
-        .rent-anatomy-icon {
-            width: 44px;
-            height: 44px;
+        .ig-formula-icon {
+            width: 48px;
+            height: 48px;
             display: flex;
             align-items: center;
             justify-content: center;
-            margin-bottom: 16px;
-            border-radius: 12px;
+            border-radius: 50%;
             background: #2563eb;
             color: #fff;
-            font-size: 1.1rem;
+            font-size: 1.15rem;
         }
-        .rent-anatomy-card-title {
-            margin: 0 0 10px;
-            font-size: 1.2rem;
+        .ig-formula-plus,
+        .ig-formula-eq {
+            font-size: 1.5rem;
             font-weight: 700;
+            color: #64748b;
+        }
+        .ig-formula-result {
+            background: #2563eb;
+            border-color: transparent;
+            min-width: 160px;
+        }
+        .ig-formula-result strong {
+            font-size: 1.65rem;
+            letter-spacing: -0.03em;
+            line-height: 1.1;
+        }
+        .ig-formula-result span {
+            font-size: 12px;
+            font-weight: 600;
+            color: #dbeafe;
+        }
+        .ig-cols {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 20px;
+            max-width: 1120px;
+            margin: 0 auto 32px;
+        }
+        .ig-col {
+            padding: 22px 20px 20px;
+            border-radius: 20px;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .ig-col-head {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            gap: 10px;
+            margin-bottom: 18px;
+        }
+        .ig-col-num {
+            font-size: 12px;
+            font-weight: 800;
+            letter-spacing: 0.12em;
+            color: #64748b;
+        }
+        .ig-col-icon {
+            width: 56px;
+            height: 56px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #2563eb, #7c3aed);
+            color: #fff;
+            font-size: 1.25rem;
+        }
+        .ig-col-title {
+            margin: 0;
+            font-size: 1.05rem;
+            font-weight: 700;
+            line-height: 1.3;
             color: #fff;
         }
-        .rent-anatomy-card-text {
-            margin: 0 0 16px;
-            font-size: 15px;
-            line-height: 1.5;
-            color: #cbd5e1;
+        .ig-vs {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            margin-bottom: 16px;
+            flex-wrap: wrap;
         }
-        .rent-anatomy-list,
-        .rent-anatomy-specs {
+        .ig-vs-bad,
+        .ig-vs-good {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 6px 10px;
+            border-radius: 999px;
+            font-size: 12px;
+            font-weight: 700;
+            white-space: nowrap;
+        }
+        .ig-vs-bad {
+            background: rgba(239, 68, 68, 0.15);
+            color: #fca5a5;
+        }
+        .ig-vs-good {
+            background: rgba(34, 197, 94, 0.18);
+            color: #86efac;
+        }
+        .ig-vs-arrow {
+            color: #64748b;
+            font-size: 12px;
+        }
+        .ig-points {
             list-style: none;
             margin: 0;
             padding: 0;
             display: flex;
             flex-direction: column;
-            gap: 12px;
+            gap: 10px;
         }
-        .rent-anatomy-list li {
+        .ig-points li {
+            display: flex;
+            align-items: center;
+            gap: 10px;
             font-size: 14px;
-            line-height: 1.45;
+            line-height: 1.35;
             color: #e2e8f0;
         }
-        .rent-anatomy-list strong {
-            color: #fff;
-        }
-        .rent-anatomy-specs li {
+        .ig-point-icon {
+            flex-shrink: 0;
+            width: 32px;
+            height: 32px;
             display: flex;
-            flex-direction: column;
-            gap: 2px;
-            padding: 12px 14px;
-            border-radius: 12px;
-            background: rgba(15, 23, 42, 0.35);
-        }
-        .rent-anatomy-specs strong {
-            font-size: 1.15rem;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+            background: rgba(37, 99, 235, 0.35);
             color: #bfdbfe;
+            font-size: 0.85rem;
         }
-        .rent-anatomy-specs span {
-            font-size: 13px;
-            color: #cbd5e1;
-        }
-        .rent-anatomy-extras {
+        .ig-extras {
             max-width: 1120px;
-            margin: 0 auto 24px;
-            padding: 24px 28px;
-            border-radius: 20px;
-            background: rgba(255, 255, 255, 0.04);
-            border: 1px dashed rgba(255, 255, 255, 0.18);
+            margin: 0 auto 20px;
         }
-        .rent-anatomy-extras-title {
-            margin: 0 0 6px;
-            font-size: 1.05rem;
+        .ig-extras-label {
+            margin: 0 0 16px;
+            text-align: center;
+            font-size: 12px;
             font-weight: 700;
-            color: #fff;
-        }
-        .rent-anatomy-extras-lead {
-            margin: 0 0 18px;
-            font-size: 14px;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
             color: #94a3b8;
         }
-        .rent-anatomy-extras-list {
+        .ig-extras-list {
             list-style: none;
             margin: 0;
             padding: 0;
@@ -773,33 +837,54 @@
             grid-template-columns: repeat(3, minmax(0, 1fr));
             gap: 16px;
         }
-        .rent-anatomy-extras-list li {
+        .ig-extras-list li {
             display: flex;
             flex-direction: column;
-            gap: 6px;
-            font-size: 14px;
-            line-height: 1.45;
-            color: #cbd5e1;
+            align-items: center;
+            text-align: center;
+            gap: 8px;
+            padding: 20px 16px;
+            border-radius: 18px;
+            background: rgba(253, 230, 138, 0.08);
+            border: 1px solid rgba(253, 230, 138, 0.2);
         }
-        .rent-anatomy-extras-name {
-            font-weight: 700;
+        .ig-extras-icon {
+            width: 52px;
+            height: 52px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background: #fbbf24;
+            color: #78350f;
+            font-size: 1.2rem;
+        }
+        .ig-extras-list strong {
+            font-size: 15px;
             color: #fde68a;
         }
-        .rent-anatomy-note {
-            max-width: 720px;
-            margin: 0 auto;
-            text-align: center;
-            font-size: 15px;
-            line-height: 1.55;
+        .ig-extras-list span {
+            font-size: 13px;
+            line-height: 1.4;
             color: #cbd5e1;
         }
-        .rent-anatomy-note strong {
+        .ig-note {
+            margin: 0;
+            text-align: center;
+            font-size: 14px;
+            color: #94a3b8;
+        }
+        .ig-note strong {
             color: #fff;
         }
         @media (max-width: 960px) {
-            .rent-anatomy-grid,
-            .rent-anatomy-extras-list {
+            .ig-cols,
+            .ig-extras-list {
                 grid-template-columns: 1fr;
+            }
+            .ig-formula-plus,
+            .ig-formula-eq {
+                display: none;
             }
         }
 
