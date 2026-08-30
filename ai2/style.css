@@ -824,6 +824,24 @@
             line-height: 1.4;
             color: #cbd5e1;
         }
+        .ig-extras-more {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 4px;
+            padding: 8px 16px;
+            border-radius: 999px;
+            background: #fbbf24;
+            color: #78350f;
+            font-size: 13px;
+            font-weight: 700;
+            text-decoration: none;
+            transition: background 0.2s, transform 0.2s;
+        }
+        .ig-extras-more:hover {
+            background: #f59e0b;
+            transform: translateY(-1px);
+        }
         .ig-benefits {
             list-style: none;
             margin: 0 0 20px;
@@ -892,107 +910,91 @@
             }
         }
 
-        /* Сервисы 1С (после блока аренды) — карточки с градиентными иконками */
-        .onec-services {
-            padding: 48px 0 56px;
-            background: #eef0f9;
-            border-top: 1px solid #e2e8f0;
+        .programmer-work {
+            padding: 56px 0 64px;
+            background: #0f172a;
+            color: #e2e8f0;
+            scroll-margin-top: 88px;
         }
-        .onec-services-header {
-            max-width: 900px;
-            margin: 0 auto 32px;
+        .programmer-work-header {
+            max-width: 760px;
+            margin: 0 auto 36px;
             text-align: center;
         }
-        .onec-services-header-icon {
-            color: #2563eb;
-            font-size: 2rem;
-            margin-bottom: 14px;
-        }
-        .onec-services-lead {
-            font-size: 1.25rem;
-            line-height: 1.55;
-            color: #0f172a;
-            font-weight: 600;
-            margin: 0;
-        }
-        .onec-services-list {
-            display: grid;
-            grid-template-columns: repeat(4, minmax(0, 1fr));
-            gap: 40px 28px;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0;
-            list-style: none;
-            justify-items: stretch;
-        }
-        .onec-services-item {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-            max-width: none;
-            width: 100%;
-        }
-        .onec-services-icon-wrap {
-            width: 76px;
-            height: 76px;
-            border-radius: 50%;
-            display: flex;
+        .programmer-work-icon {
+            display: inline-flex;
             align-items: center;
             justify-content: center;
-            margin-bottom: 18px;
-            background: linear-gradient(135deg, #c026d3 0%, #9333ea 38%, #3b82f6 100%);
-            box-shadow: 0 10px 26px rgba(147, 51, 234, 0.38);
-            flex-shrink: 0;
+            width: 56px;
+            height: 56px;
+            margin-bottom: 16px;
+            border-radius: 50%;
+            background: #fbbf24;
+            color: #78350f;
+            font-size: 1.25rem;
         }
-        .onec-services-icon-wrap i {
-            font-size: 1.65rem;
-            color: #ffffff;
+        .programmer-work-title {
+            margin: 0 0 14px;
+            font-size: clamp(1.5rem, 3vw, 2.1rem);
+            font-weight: 800;
+            letter-spacing: -0.03em;
+            color: #fff;
         }
-        .onec-services-text {
-            width: 100%;
+        .programmer-work-lead {
+            margin: 0;
+            font-size: 1.05rem;
+            line-height: 1.55;
+            color: #cbd5e1;
         }
-        .onec-services-name {
+        .programmer-work-list {
+            list-style: none;
+            margin: 0 auto;
+            padding: 0;
+            max-width: 1120px;
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 16px;
+        }
+        .programmer-work-list li {
+            padding: 22px 20px 20px;
+            border-radius: 18px;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(253, 230, 138, 0.18);
+        }
+        .programmer-work-list strong {
             display: block;
-            font-size: 12px;
-            line-height: 1.4;
+            margin-bottom: 8px;
+            font-size: 1.02rem;
             font-weight: 700;
-            color: #0f172a;
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-            margin-bottom: 10px;
+            color: #fde68a;
+            line-height: 1.35;
         }
-        .onec-services-desc {
+        .programmer-work-list span {
             display: block;
-            font-size: 13px;
+            font-size: 14px;
             line-height: 1.5;
-            color: #64748b;
-            font-weight: 400;
+            color: #cbd5e1;
         }
-        .onec-services-list a {
-            color: #2563eb;
+        .programmer-work-list a {
+            color: #fde68a;
             font-weight: 600;
             text-decoration: none;
-            border-bottom: 1px solid rgba(37, 99, 235, 0.35);
+            border-bottom: 1px solid rgba(253, 230, 138, 0.45);
             margin-left: 0.2em;
         }
-        .onec-services-list a:hover {
-            color: #1d4ed8;
-            border-bottom-color: #1d4ed8;
+        .programmer-work-list a:hover {
+            color: #fff;
+            border-bottom-color: #fff;
         }
-        .onec-services-links {
-            display: inline;
+        .programmer-work-list li:not(:has(span)) strong {
+            margin-bottom: 0;
         }
-        @media (max-width: 991px) {
-            .onec-services-list {
-                grid-template-columns: repeat(2, minmax(0, 1fr));
-                gap: 36px 20px;
-            }
+        .programmer-work + .programmer-work {
+            padding-top: 16px;
         }
-        @media (max-width: 520px) {
-            .onec-services-list {
-                grid-template-columns: repeat(2, minmax(0, 1fr));
-                gap: 32px 16px;
+        @media (max-width: 900px) {
+            .programmer-work-list {
+                grid-template-columns: 1fr;
             }
         }
 
