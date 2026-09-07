@@ -1005,6 +1005,12 @@
             grid-template-columns: repeat(3, minmax(0, 1fr));
             align-items: stretch;
         }
+        .programmer-work-list--groups > li {
+            text-align: center;
+        }
+        .programmer-work-list--groups > li > strong {
+            text-align: center;
+        }
         .programmer-work-group-lead {
             display: block;
             margin-bottom: 12px;
@@ -1042,6 +1048,28 @@
             height: auto;
             border-radius: 14px;
             border: 1px solid rgba(253, 230, 138, 0.22);
+        }
+        .programmer-work-note {
+            max-width: 1120px;
+            margin: 28px auto 0;
+            padding: 22px 24px;
+            border-radius: 18px;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(253, 230, 138, 0.18);
+            font-size: 1.02rem;
+            line-height: 1.55;
+            color: #e2e8f0;
+            text-align: left;
+        }
+        .programmer-work-note + .programmer-work-list {
+            margin-top: 24px;
+        }
+        .programmer-work-list + .programmer-work-note {
+            margin-top: 24px;
+        }
+        .programmer-work-note b {
+            color: #fde68a;
+            font-weight: 700;
         }
         @media (max-width: 900px) {
             .programmer-work-list {
